@@ -5,14 +5,14 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 3936459,
+    "play": 3941881,
     "deaths": 6,
     "mobKills": 3589,
     "playerKills": 0,
     "mined": 43494,
     "crafted": 25085,
-    "km": 292.07,
-    "jumps": 29459,
+    "km": 292.5,
+    "jumps": 29499,
     "dmg": 11616,
     "dmgTaken": 2027,
     "fish": 0,
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T12:02:46+00:00"
+ "updated": "2026-10-24T12:38:43+00:00"
 }
