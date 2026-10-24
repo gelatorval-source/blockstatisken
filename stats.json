@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 3957639,
+    "play": 3999639,
     "deaths": 6,
-    "mobKills": 3590,
+    "mobKills": 3593,
     "playerKills": 0,
-    "mined": 43495,
-    "crafted": 25086,
-    "km": 294.48,
-    "jumps": 29750,
-    "dmg": 11634,
-    "dmgTaken": 2027,
+    "mined": 43728,
+    "crafted": 25391,
+    "km": 297.46,
+    "jumps": 29984,
+    "dmg": 11682,
+    "dmgTaken": 2043,
     "fish": 0,
     "bred": 216,
     "trades": 356,
@@ -25,7 +25,7 @@
      ],
      [
       "grass_block",
-      5813
+      5816
      ],
      [
       "stone",
@@ -41,7 +41,7 @@
      ],
      [
       "dirt",
-      1756
+      1783
      ],
      [
       "oak_leaves",
@@ -59,7 +59,7 @@
      ],
      [
       "zombie",
-      193
+      194
      ],
      [
       "skeleton",
@@ -111,18 +111,18 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2172588,
+    "play": 2214588,
     "deaths": 2,
-    "mobKills": 2664,
+    "mobKills": 2932,
     "playerKills": 0,
-    "mined": 30278,
-    "crafted": 12309,
-    "km": 158.55,
-    "jumps": 34644,
-    "dmg": 9130,
-    "dmgTaken": 2130,
+    "mined": 30385,
+    "crafted": 13817,
+    "km": 163.44,
+    "jumps": 35591,
+    "dmg": 9566,
+    "dmgTaken": 2146,
     "fish": 0,
-    "bred": 29,
+    "bred": 55,
     "trades": 0,
     "topMined": [
      [
@@ -131,11 +131,11 @@
      ],
      [
       "stone",
-      7440
+      7461
      ],
      [
       "dirt",
-      2370
+      2382
      ],
      [
       "spruce_log",
@@ -161,11 +161,15 @@
     "topKilled": [
      [
       "silverfish",
-      2038
+      2267
      ],
      [
       "zombie",
       110
+     ],
+     [
+      "cow",
+      93
      ],
      [
       "skeleton",
@@ -176,20 +180,16 @@
       81
      ],
      [
-      "cow",
-      77
-     ],
-     [
       "sheep",
-      59
+      68
      ],
      [
       "pig",
-      41
+      48
      ],
      [
       "chicken",
-      41
+      42
      ]
     ],
     "killedBy": [],
@@ -310,35 +310,39 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 735541,
+    "play": 777541,
     "deaths": 3,
-    "mobKills": 37,
+    "mobKills": 40,
     "playerKills": 0,
-    "mined": 7070,
-    "crafted": 3394,
-    "km": 44.87,
-    "jumps": 5156,
-    "dmg": 415,
-    "dmgTaken": 282,
+    "mined": 7727,
+    "crafted": 3439,
+    "km": 45.86,
+    "jumps": 5271,
+    "dmg": 454,
+    "dmgTaken": 285,
     "fish": 0,
-    "bred": 14,
+    "bred": 16,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      1809
+      1939
      ],
      [
       "dirt",
-      1586
+      1594
      ],
      [
       "grass_block",
-      1195
+      1196
      ],
      [
       "sand",
       560
+     ],
+     [
+      "deepslate",
+      431
      ],
      [
       "oak_log",
@@ -351,10 +355,6 @@
      [
       "short_grass",
       148
-     ],
-     [
-      "birch_log",
-      127
      ]
     ],
     "topKilled": [
@@ -364,6 +364,10 @@
      ],
      [
       "sheep",
+      6
+     ],
+     [
+      "pig",
       6
      ],
      [
@@ -381,10 +385,6 @@
      [
       "spider",
       4
-     ],
-     [
-      "pig",
-      3
      ],
      [
       "salmon",
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T18:14:55+00:00"
+ "updated": "2026-10-24T18:49:48+00:00"
 }
