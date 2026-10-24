@@ -1,0 +1,40 @@
+name: Statistiken aktualisieren
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Statistiken vom Server holen
+        run: python fetch_stats.py
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_STATS_DIR: ${{ secrets.FTP_STATS_DIR }}
+          SERVER_NAME: ${{ vars.SERVER_NAME }}
+      - name: Änderungen speichern
+        run: |
+          git config user.name "stats-bot"
+          git config user.email "stats-bot@users.noreply.github.com"
+          git add stats.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Statistiken aktualisiert"
+            git push
+          fi
