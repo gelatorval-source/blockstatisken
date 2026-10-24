@@ -5,43 +5,43 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4175971,
+    "play": 4205971,
     "deaths": 6,
-    "mobKills": 5962,
+    "mobKills": 5966,
     "playerKills": 0,
-    "mined": 45861,
-    "crafted": 26428,
-    "km": 310.56,
-    "jumps": 31455,
-    "dmg": 12298,
-    "dmgTaken": 2078,
+    "mined": 46771,
+    "crafted": 26690,
+    "km": 313.71,
+    "jumps": 31614,
+    "dmg": 12360,
+    "dmgTaken": 2082,
     "fish": 0,
-    "bred": 269,
-    "trades": 356,
+    "bred": 324,
+    "trades": 369,
     "topMined": [
      [
       "deepslate",
       7235
      ],
      [
-      "grass_block",
-      5857
+      "stone",
+      5900
      ],
      [
-      "stone",
-      5785
+      "grass_block",
+      5863
      ],
      [
       "netherrack",
       5049
      ],
      [
-      "dirt",
-      2047
+      "wheat",
+      2097
      ],
      [
-      "wheat",
-      1866
+      "dirt",
+      2053
      ],
      [
       "oak_leaves",
@@ -59,7 +59,7 @@
      ],
      [
       "zombie",
-      195
+      198
      ],
      [
       "skeleton",
@@ -67,7 +67,7 @@
      ],
      [
       "spider",
-      80
+      81
      ],
      [
       "cow",
@@ -111,35 +111,35 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2392682,
+    "play": 2422607,
     "deaths": 2,
     "mobKills": 5584,
     "playerKills": 0,
-    "mined": 31754,
-    "crafted": 14173,
-    "km": 171.8,
-    "jumps": 36643,
+    "mined": 32310,
+    "crafted": 14636,
+    "km": 174.57,
+    "jumps": 36966,
     "dmg": 9746,
-    "dmgTaken": 2161,
+    "dmgTaken": 2169,
     "fish": 0,
     "bred": 55,
     "trades": 0,
     "topMined": [
      [
+      "stone",
+      8399
+     ],
+     [
       "deepslate",
       8372
      ],
      [
-      "stone",
-      8155
-     ],
-     [
       "dirt",
-      2633
+      2664
      ],
      [
       "spruce_log",
-      1784
+      1785
      ],
      [
       "oak_log",
@@ -150,12 +150,12 @@
       749
      ],
      [
-      "tuff",
-      696
+      "cobblestone",
+      712
      ],
      [
-      "cobblestone",
-      666
+      "tuff",
+      696
      ]
     ],
     "topKilled": [
@@ -208,7 +208,7 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2099714,
+    "play": 2119815,
     "deaths": 1,
     "mobKills": 2721,
     "playerKills": 0,
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T21:23:50+00:00"
+ "updated": "2026-10-24T21:52:45+00:00"
 }
