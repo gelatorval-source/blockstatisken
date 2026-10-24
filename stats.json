@@ -95,23 +95,32 @@
       "creeper",
       1
      ]
-    ]
+    ],
+    "ms": {
+     "dragon": 0,
+     "wither": 0,
+     "warden": 0,
+     "elder": 0,
+     "diamonds": 352,
+     "emeralds": 1,
+     "debris": 25
+    }
    }
   },
   {
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2105877,
+    "play": 2135877,
     "deaths": 2,
-    "mobKills": 2661,
+    "mobKills": 2664,
     "playerKills": 0,
-    "mined": 29752,
-    "crafted": 11781,
-    "km": 155.06,
-    "jumps": 33835,
-    "dmg": 9084,
-    "dmgTaken": 2090,
+    "mined": 29965,
+    "crafted": 12062,
+    "km": 156.52,
+    "jumps": 34252,
+    "dmg": 9130,
+    "dmgTaken": 2120,
     "fish": 0,
     "bred": 29,
     "trades": 0,
@@ -122,11 +131,11 @@
      ],
      [
       "stone",
-      7164
+      7226
      ],
      [
       "dirt",
-      2287
+      2307
      ],
      [
       "spruce_log",
@@ -156,11 +165,11 @@
      ],
      [
       "zombie",
-      109
+      110
      ],
      [
       "skeleton",
-      89
+      90
      ],
      [
       "spider",
@@ -183,7 +192,16 @@
       41
      ]
     ],
-    "killedBy": []
+    "killedBy": [],
+    "ms": {
+     "dragon": 0,
+     "wither": 0,
+     "warden": 0,
+     "elder": 0,
+     "diamonds": 177,
+     "emeralds": 0,
+     "debris": 0
+    }
    }
   },
   {
@@ -276,7 +294,16 @@
       "enderman",
       1
      ]
-    ]
+    ],
+    "ms": {
+     "dragon": 0,
+     "wither": 0,
+     "warden": 0,
+     "elder": 0,
+     "diamonds": 23,
+     "emeralds": 1,
+     "debris": 0
+    }
    }
   },
   {
@@ -373,9 +400,22 @@
       "skeleton",
       1
      ]
-    ]
+    ],
+    "ms": {
+     "dragon": 0,
+     "wither": 0,
+     "warden": 0,
+     "elder": 0,
+     "diamonds": 0,
+     "emeralds": 0,
+     "debris": 0
+    }
    }
   }
  ],
- "updated": "2026-10-24T00:37:10+00:00"
+ "world": null,
+ "online": [],
+ "feed": [],
+ "deathCauses": {},
+ "updated": "2026-10-24T01:02:32+00:00"
 }
