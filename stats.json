@@ -5,19 +5,19 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 3900402,
+    "play": 3936459,
     "deaths": 6,
-    "mobKills": 3588,
+    "mobKills": 3589,
     "playerKills": 0,
-    "mined": 42760,
-    "crafted": 24117,
-    "km": 288.7,
-    "jumps": 29350,
-    "dmg": 11603,
-    "dmgTaken": 2020,
+    "mined": 43494,
+    "crafted": 25085,
+    "km": 292.07,
+    "jumps": 29459,
+    "dmg": 11616,
+    "dmgTaken": 2027,
     "fish": 0,
-    "bred": 180,
-    "trades": 298,
+    "bred": 216,
+    "trades": 356,
     "topMined": [
      [
       "deepslate",
@@ -36,12 +36,12 @@
       4435
      ],
      [
-      "dirt",
-      1756
+      "wheat",
+      1815
      ],
      [
-      "wheat",
-      1587
+      "dirt",
+      1756
      ],
      [
       "oak_leaves",
@@ -49,7 +49,7 @@
      ],
      [
       "sugar_cane",
-      969
+      1076
      ]
     ],
     "topKilled": [
@@ -67,7 +67,7 @@
      ],
      [
       "spider",
-      79
+      80
      ],
      [
       "creeper",
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T11:32:36+00:00"
+ "updated": "2026-10-24T12:02:46+00:00"
 }
