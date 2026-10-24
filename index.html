@@ -1,0 +1,486 @@
+<title>Blockstatistik</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Pixelify+Sans:wght@500;700&display=swap">
+<style>
+/* Layout: one column, header band with server name, tabs (Rangliste / Spieler / Vergleich / Verwalten), pixel-grass strip as the only flourish */
+:root {
+  --bg: #e8ebe4; --surface: #f4f6f0; --ink: #1b231d; --muted: #5b675e; --line: #cdd4c8;
+  --accent: #3f7d20; --accent-ink: #ffffff; --warn: #b3402a; --gold: #8a5f00;
+  --p0: #3f7d20; --p1: #1d8a8a; --p2: #b3402a; --p3: #7a4fb5; --p4: #c27a00; --p5: #2b64b8; --p6: #b0357a; --p7: #5d6b73;
+  --grass-a: #4f9a2a; --grass-b: #3b7a1f; --dirt: #7b5a3a;
+  --f-display: "Pixelify Sans", "Trebuchet MS", system-ui, sans-serif;
+  --f-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121715; --surface: #1a211e; --ink: #e6ede4; --muted: #93a197; --line: #2b3631;
+    --accent: #7fcf4a; --accent-ink: #0e1a08; --warn: #ff8a6b; --gold: #f2b84b;
+    --p0: #7fcf4a; --p1: #4fd1c5; --p2: #ff8a6b; --p3: #b794f4; --p4: #f2b84b; --p5: #6fa8ff; --p6: #f47fb7; --p7: #a9b8c0;
+    --grass-a: #5fae35; --grass-b: #468a27; --dirt: #8a6642;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121715; --surface: #1a211e; --ink: #e6ede4; --muted: #93a197; --line: #2b3631;
+  --accent: #7fcf4a; --accent-ink: #0e1a08; --warn: #ff8a6b; --gold: #f2b84b;
+  --p0: #7fcf4a; --p1: #4fd1c5; --p2: #ff8a6b; --p3: #b794f4; --p4: #f2b84b; --p5: #6fa8ff; --p6: #f47fb7; --p7: #a9b8c0;
+  --grass-a: #5fae35; --grass-b: #468a27; --dirt: #8a6642;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.grass { height: 12px; background:
+  repeating-linear-gradient(90deg, var(--grass-a) 0 12px, var(--grass-b) 12px 24px);
+  border-bottom: 4px solid var(--dirt); }
+.wrap { max-width: 1040px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 56px; }
+header { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; justify-content: space-between; }
+header > div { min-width: 0; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(32px, 7vw, 52px); line-height: 1; margin: 0; letter-spacing: .01em; text-wrap: balance; }
+.server { color: var(--muted); margin: 6px 0 0; font-size: 16px; overflow-wrap: anywhere; }
+.chip { font-family: var(--f-mono); font-size: 12px; padding: 4px 10px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); display: inline-flex; gap: 8px; align-items: center; }
+.chip i { width: 8px; height: 8px; background: var(--muted); display: inline-block; }
+.chip.live i { background: var(--accent); }
+.chip.demo { color: var(--gold); border-color: var(--gold); }
+.chip.demo i { background: var(--gold); }
+
+.strip { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.strip > div { padding: 14px 16px 14px 0; min-width: 0; }
+.strip > div + div { padding-left: 16px; border-left: 1px solid var(--line); }
+.strip b { display: block; font-family: var(--f-display); font-weight: 700; font-size: clamp(22px, 4.2vw, 32px); line-height: 1.1; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.strip span { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+@media (max-width: 560px) {
+  .strip { grid-template-columns: 1fr 1fr; }
+  .strip > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .strip > div:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+.note { margin: 16px 0 0; padding: 10px 14px; border: 1px dashed var(--gold); color: var(--ink); background: var(--surface); font-size: 14px; }
+
+nav.tabs { display: flex; gap: 4px; margin-top: 24px; border-bottom: 2px solid var(--line); overflow-x: auto; }
+nav.tabs button { font: inherit; font-family: var(--f-display); font-weight: 500; font-size: 18px; background: none; border: 0; color: var(--muted); padding: 8px 14px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav.tabs button:hover { color: var(--ink); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+main { margin-top: 24px; }
+h2 { font-family: var(--f-display); font-weight: 700; font-size: 24px; margin: 0 0 12px; }
+h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin: 0 0 10px; font-weight: 700; }
+
+.metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.metrics button { font: inherit; font-size: 14px; padding: 6px 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.metrics button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 700; }
+
+.board { display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+.rank { font-family: var(--f-display); font-size: 20px; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.row:first-child .rank { color: var(--gold); }
+.who { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; min-width: 0; }
+.who span { overflow-wrap: anywhere; font-weight: 500; }
+.track { height: 18px; background: var(--surface); border: 1px solid var(--line); }
+.fill { height: 100%; background: var(--c); min-width: 2px; }
+.val { font-family: var(--f-mono); font-size: 14px; font-variant-numeric: tabular-nums; text-align: right; min-width: 6ch; }
+.avatar { width: 22px; height: 22px; flex: none; color: var(--c); background: var(--surface); border: 1px solid var(--line); }
+.avatar.big { width: 64px; height: 64px; }
+
+.titles { margin-top: 36px; }
+.titlegrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.title { border: 1px solid var(--line); background: var(--surface); padding: 12px 14px; min-width: 0; }
+.title b { display: block; font-family: var(--f-display); font-size: 18px; }
+.title small { color: var(--muted); display: block; font-size: 12px; margin-bottom: 8px; }
+.title .who { margin: 0; }
+
+.players { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.pcard { text-align: left; font: inherit; color: inherit; border: 1px solid var(--line); background: var(--surface); padding: 12px; display: grid; gap: 10px; cursor: pointer; min-width: 0; }
+.pcard:hover { border-color: var(--c); }
+.pcard[aria-pressed="true"] { border-color: var(--c); box-shadow: inset 0 0 0 1px var(--c); }
+.pcard strong { display: block; overflow-wrap: anywhere; }
+.pcard small { color: var(--muted); font-family: var(--f-mono); font-size: 12px; }
+.pcard .top { display: flex; gap: 10px; align-items: center; min-width: 0; }
+
+.detail { margin-top: 24px; border: 1px solid var(--line); background: var(--surface); padding: 20px; }
+.detail header { align-items: center; justify-content: flex-start; flex-wrap: nowrap; gap: 16px; }
+.detail h2 { margin: 0; overflow-wrap: anywhere; }
+.statgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0; margin: 20px 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.statgrid div { padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); min-width: 0; }
+.statgrid b { display: block; font-family: var(--f-mono); font-weight: 500; font-size: 16px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.statgrid span { font-size: 12px; color: var(--muted); }
+.lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.lists > div { min-width: 0; }
+.mini { display: grid; gap: 8px; }
+.mini .line { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; }
+.mini .line span { overflow-wrap: anywhere; font-size: 14px; }
+.mini .line code { font-family: var(--f-mono); font-size: 13px; }
+.mini .line .track { grid-column: 1 / -1; height: 8px; }
+.empty { color: var(--muted); font-size: 14px; }
+
+.pick { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; align-items: center; }
+select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); min-width: 0; max-width: 100%; }
+.vs { font-family: var(--f-display); color: var(--muted); }
+.cmp { display: grid; gap: 14px; }
+.cmp .lab { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); text-align: center; margin-bottom: 3px; }
+.cmp .duel { display: grid; grid-template-columns: minmax(5ch, 9ch) 1fr 1px 1fr minmax(5ch, 9ch); gap: 8px; align-items: center; }
+.cmp .half { display: flex; height: 16px; background: var(--surface); }
+.cmp .half.l { justify-content: flex-end; }
+.cmp .half i { display: block; height: 100%; background: var(--c); min-width: 2px; }
+.cmp .mid { background: var(--line); height: 24px; }
+.cmp .num { font-family: var(--f-mono); font-size: 13px; font-variant-numeric: tabular-nums; }
+.cmp .num.r { text-align: right; }
+.cmp .num.w { font-weight: 500; color: var(--ink); }
+.cmp .num:not(.w) { color: var(--muted); }
+
+.panel { border: 1px solid var(--line); background: var(--surface); padding: 20px; margin-bottom: 20px; }
+.panel p { margin: 0 0 12px; max-width: 65ch; }
+.panel code { font-family: var(--f-mono); font-size: 13px; background: var(--bg); padding: 1px 5px; }
+.drop { display: block; border: 2px dashed var(--line); padding: 28px 16px; text-align: center; cursor: pointer; color: var(--muted); }
+.drop.over, .drop:hover { border-color: var(--accent); color: var(--ink); }
+.drop input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.drop:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn { font: inherit; font-weight: 700; padding: 8px 16px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+.btn.ghost { background: none; color: var(--ink); border-color: var(--line); font-weight: 500; }
+.btn.danger { border-color: var(--warn); color: var(--warn); background: none; }
+.btn.dangerfill { background: var(--warn); border-color: var(--warn); color: var(--bg); }
+.btn:disabled { opacity: .5; cursor: default; }
+.admin-list { display: grid; gap: 8px; margin-top: 12px; }
+.admin-row { display: grid; grid-template-columns: 22px minmax(120px, 1fr) auto auto; gap: 10px; align-items: center; }
+.admin-row small { color: var(--muted); font-family: var(--f-mono); font-size: 12px; overflow-wrap: anywhere; }
+.admin-row .acts { display: flex; gap: 6px; flex-wrap: wrap; }
+@media (max-width: 560px) { .admin-row { grid-template-columns: 22px 1fr; } .admin-row small, .admin-row .acts { grid-column: 2; } }
+.status { color: var(--muted); font-size: 14px; margin-top: 10px; min-height: 1.4em; }
+.err { color: var(--warn); }
+.bar-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+@media (prefers-reduced-motion: no-preference) { .fill, .cmp .half i { transition: width .35s ease; } }
+</style>
+
+<div class="grass"></div>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Blockstatistik</h1>
+      <p class="server" id="server-name"></p>
+    </div>
+    <span class="chip" id="status-chip"><i></i><span>Lade …</span></span>
+  </header>
+  <div class="strip" id="strip"></div>
+  <div id="notice"></div>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <main id="view"></main>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- helpers ---------- */
+  function el(tag, props) {
+    var e = document.createElement(tag);
+    props = props || {};
+    Object.keys(props).forEach(function (k) {
+      var v = props[k];
+      if (k === "class") e.className = v;
+      else if (k === "text") e.textContent = v;
+      else if (k.slice(0, 2) === "on") e.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) e.setAttribute(k, v === true ? "" : v);
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      var kids = [].concat(arguments[i]);
+      for (var j = 0; j < kids.length; j++) {
+        var kid = kids[j];
+        if (kid == null || kid === false) continue;
+        e.append(kid.nodeType ? kid : document.createTextNode(kid));
+      }
+    }
+    return e;
+  }
+  var nf = new Intl.NumberFormat("de-DE");
+  var nf2 = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 1 });
+  function fmtInt(v) { return nf.format(Math.round(v)); }
+  function fmtTime(ticks) {
+    var min = Math.floor(ticks / 20 / 60);
+    var h = Math.floor(min / 60);
+    if (h >= 48) return nf.format(Math.floor(h / 24)) + " T " + (h % 24) + " Std";
+    return nf.format(h) + " Std " + (min % 60) + " Min";
+  }
+  function pretty(id) { var s = String(id).replace(/_/g, " "); return s.charAt(0).toUpperCase() + s.slice(1); }
+  function hash(str) { var h = 2166136261; for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+  function colorOf(id) { return "var(--p" + (hash(id) % 8) + ")"; }
+
+  function avatar(id, big) {
+    var ns = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("viewBox", "0 0 8 8");
+    svg.setAttribute("shape-rendering", "crispEdges");
+    svg.setAttribute("class", "avatar" + (big ? " big" : ""));
+    svg.setAttribute("aria-hidden", "true");
+    svg.style.setProperty("--c", colorOf(id));
+    var h = hash(id), h2 = hash(id + "#");
+    for (var y = 0; y < 8; y++) for (var x = 0; x < 4; x++) {
+      var bit = ((y < 4 ? h : h2) >> ((y % 4) * 4 + x)) & 1;
+      if (!bit) continue;
+      [x, 7 - x].forEach(function (xx) {
+        var r = document.createElementNS(ns, "rect");
+        r.setAttribute("x", xx); r.setAttribute("y", y); r.setAttribute("width", 1); r.setAttribute("height", 1);
+        r.setAttribute("fill", "currentColor");
+        svg.append(r);
+      });
+    }
+    return svg;
+  }
+
+  /* ---------- stats ---------- */
+  var METRICS = [
+    { k: "play", label: "Spielzeit", fmt: fmtTime },
+    { k: "deaths", label: "Tode", fmt: fmtInt },
+    { k: "mobKills", label: "Mob-Kills", fmt: fmtInt },
+    { k: "mined", label: "Blöcke abgebaut", fmt: fmtInt },
+    { k: "crafted", label: "Items hergestellt", fmt: fmtInt },
+    { k: "km", label: "Strecke", fmt: function (v) { return nf2.format(v) + " km"; } },
+    { k: "jumps", label: "Sprünge", fmt: fmtInt },
+    { k: "dmg", label: "Schaden verteilt", fmt: function (v) { return fmtInt(v) + " ♥"; } },
+    { k: "fish", label: "Fische geangelt", fmt: fmtInt },
+    { k: "bred", label: "Tiere gezüchtet", fmt: fmtInt },
+    { k: "trades", label: "Dorfbewohner-Trades", fmt: fmtInt }
+  ];
+  var DETAIL_EXTRA = [
+    { k: "playerKills", label: "Spieler-Kills", fmt: fmtInt },
+    { k: "dmgTaken", label: "Schaden erlitten", fmt: function (v) { return fmtInt(v) + " ♥"; } }
+  ];
+  var TITLES = [
+    { k: "play", title: "Dauerzocker", sub: "meiste Spielzeit" },
+    { k: "deaths", title: "Stammgast im Respawn", sub: "meiste Tode" },
+    { k: "mobKills", title: "Monsterjäger", sub: "meiste Mob-Kills" },
+    { k: "mined", title: "Höhlenbewohner", sub: "meiste Blöcke abgebaut" },
+    { k: "km", title: "Marathonläufer", sub: "weiteste Strecke" },
+    { k: "jumps", title: "Hüpfer", sub: "meiste Sprünge" },
+    { k: "fish", title: "Angelkönig", sub: "meiste Fische" },
+    { k: "bred", title: "Hofbesitzer", sub: "meiste Tiere gezüchtet" }
+  ];
+
+  function summarize(json) {
+    var st = (json && json.stats) || {};
+    var c = st["minecraft:custom"] || {};
+    var g = function (k) { return Number(c["minecraft:" + k]) || 0; };
+    var sum = function (o) { return Object.keys(o || {}).reduce(function (a, k) { return a + (Number(o[k]) || 0); }, 0); };
+    var top = function (o, n) {
+      return Object.keys(o || {}).map(function (k) { return [k.replace("minecraft:", ""), Number(o[k]) || 0]; })
+        .filter(function (p) { return p[1] > 0; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, n);
+    };
+    var cm = ["walk", "sprint", "crouch", "swim", "fly", "aviate", "walk_on_water", "walk_under_water", "boat", "horse", "minecart", "pig", "strider", "climb"]
+      .reduce(function (a, k) { return a + g(k + "_one_cm"); }, 0);
+    return {
+      play: g("play_time") || g("play_one_minute"),
+      deaths: g("deaths"), mobKills: g("mob_kills"), playerKills: g("player_kills"),
+      mined: sum(st["minecraft:mined"]), crafted: sum(st["minecraft:crafted"]),
+      km: Math.round(cm / 1000) / 100, jumps: g("jump"),
+      dmg: Math.round(g("damage_dealt") / 10), dmgTaken: Math.round(g("damage_taken") / 10),
+      fish: g("fish_caught"), bred: g("animals_bred"), trades: g("traded_with_villager"),
+      topMined: top(st["minecraft:mined"], 8), topKilled: top(st["minecraft:killed"], 8), killedBy: top(st["minecraft:killed_by"], 5)
+    };
+  }
+
+  /* ---------- sample data (clearly marked in the UI) ---------- */
+  function demoPlayers() {
+    function mk(id, name, f) {
+      return { id: id, name: name, demo: true, s: {
+        play: Math.round(f * 20 * 3600 * 61), deaths: Math.round(f * 9 + (hash(id) % 14)), mobKills: Math.round(f * 410 + hash(id) % 200),
+        playerKills: hash(id) % 4, mined: Math.round(f * 7300 + hash(id) % 900), crafted: Math.round(f * 1900 + hash(id) % 300),
+        km: Math.round((f * 96 + (hash(id) % 20)) * 10) / 10, jumps: Math.round(f * 5200 + hash(id) % 800),
+        dmg: Math.round(f * 3600), dmgTaken: Math.round(f * 2100), fish: Math.round(f * 12 + hash(id) % 20),
+        bred: Math.round(f * 18), trades: Math.round(f * 9),
+        topMined: [["stone", Math.round(f * 2100)], ["deepslate", Math.round(f * 1800)], ["dirt", Math.round(f * 900)], ["iron_ore", Math.round(f * 260)], ["oak_log", Math.round(f * 240)], ["diamond_ore", Math.round(f * 30)]],
+        topKilled: [["zombie", Math.round(f * 120)], ["skeleton", Math.round(f * 90)], ["creeper", Math.round(f * 55)], ["spider", Math.round(f * 40)], ["enderman", Math.round(f * 18)]],
+        killedBy: [["creeper", Math.round(f * 3)], ["zombie", Math.round(f * 2)], ["skeleton", Math.round(f * 2)]]
+      } };
+    }
+    return [
+      mk("demo-0001", "Creeper_Kai", 3.1), mk("demo-0002", "LunaMine", 2.2), mk("demo-0003", "Noxus", 1.4),
+      mk("demo-0004", "BauMeisterBen", 4.0), mk("demo-0005", "Pixelpia", 0.7)
+    ];
+  }
+
+  /* ---------- state ---------- */
+  var S = {
+    status: "loading", // loading | live | demo
+    reason: "",
+    players: [],
+    serverName: "",
+    canWrite: false,
+    tab: "board", metric: "play", selected: null, cmpA: null, cmpB: null,
+    updated: null
+  };
+  try { var t = localStorage.getItem("bs-tab"); if (t) S.tab = t; } catch (e) {}
+
+  function shown() { return S.status === "demo" ? demoPlayers() : S.players; }
+
+  /* ---------- render ---------- */
+  function render() {
+    renderHead();
+    renderTabs();
+    var v = document.getElementById("view");
+    v.replaceChildren();
+    var list = shown();
+    if (S.status === "loading") { v.append(el("p", { class: "empty", text: "Statistiken werden geladen …" })); return; }
+    if (S.tab === "admin") S.tab = "board";
+    if (!list.length) { v.append(el("p", { class: "empty", text: "Noch keine Statistiken vorhanden." })); return; }
+    if (S.tab === "players") renderPlayers(v, list);
+    else if (S.tab === "compare") renderCompare(v, list);
+    else renderBoard(v, list);
+  }
+
+  function renderHead() {
+    document.getElementById("server-name").textContent = S.serverName || "Unser Minecraft-Server";
+    var chip = document.getElementById("status-chip");
+    chip.className = "chip " + (S.status === "live" ? "live" : S.status === "demo" ? "demo" : "");
+    chip.lastChild.textContent = S.status === "live" ? (S.updated ? "Stand " + new Date(S.updated).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "Live-Daten") : S.status === "demo" ? "Beispieldaten" : "Lade …";
+    var list = shown();
+    var strip = document.getElementById("strip");
+    strip.replaceChildren();
+    if (S.status === "loading") return;
+    var tot = function (k) { return list.reduce(function (a, p) { return a + (p.s[k] || 0); }, 0); };
+    [[fmtInt(list.length), "Spieler"], [fmtTime(tot("play")), "Spielzeit gesamt"], [fmtInt(tot("deaths")), "Tode gesamt"], [fmtInt(tot("mined")), "Blöcke abgebaut"]]
+      .forEach(function (x) { strip.append(el("div", {}, el("b", { text: x[0] }), el("span", { text: x[1] }))); });
+    var n = document.getElementById("notice");
+    n.replaceChildren();
+    if (S.status === "demo") n.append(el("p", { class: "note", text: S.reason }));
+  }
+
+  function renderTabs() {
+    var tabs = [["board", "Rangliste"], ["players", "Spieler"], ["compare", "Vergleich"]];
+    if (S.canWrite) tabs.push(["admin", "Verwalten"]);
+    var nav = document.getElementById("tabs");
+    nav.replaceChildren();
+    tabs.forEach(function (t) {
+      nav.append(el("button", { role: "tab", "aria-selected": String(S.tab === t[0]), text: t[1], onclick: function () {
+        S.tab = t[0]; try { localStorage.setItem("bs-tab", t[0]); } catch (e) {} render();
+      } }));
+    });
+  }
+
+  function sorted(list, k) { return list.slice().sort(function (a, b) { return (b.s[k] || 0) - (a.s[k] || 0); }); }
+  function whoLine(p) { return el("div", { class: "who" }, avatar(p.id), el("span", { text: p.name })); }
+
+  function renderBoard(v, list) {
+    var m = METRICS.filter(function (x) { return x.k === S.metric; })[0] || METRICS[0];
+    var chips = el("div", { class: "metrics" });
+    METRICS.forEach(function (x) {
+      chips.append(el("button", { "aria-pressed": String(x.k === m.k), text: x.label, onclick: function () { S.metric = x.k; render(); } }));
+    });
+    var rows = sorted(list, m.k);
+    var max = Math.max.apply(null, rows.map(function (p) { return p.s[m.k] || 0; }).concat([1]));
+    var board = el("div", { class: "board" });
+    rows.forEach(function (p, i) {
+      var val = p.s[m.k] || 0;
+      var fill = el("div", { class: "fill" });
+      fill.style.width = (val / max * 100) + "%";
+      var track = el("div", { class: "track" }, fill);
+      track.style.setProperty("--c", colorOf(p.id));
+      board.append(el("div", { class: "row" },
+        el("div", { class: "rank", text: String(i + 1) }),
+        el("div", {}, whoLine(p), track),
+        el("div", { class: "val", text: m.fmt(val) })));
+    });
+    v.append(el("h2", { text: m.label }), chips, board);
+
+    var tg = el("div", { class: "titlegrid" });
+    TITLES.forEach(function (t) {
+      var r = sorted(list, t.k)[0];
+      if (!r || !(r.s[t.k] > 0)) return;
+      var mm = METRICS.filter(function (x) { return x.k === t.k; })[0];
+      tg.append(el("div", { class: "title" }, el("b", { text: t.title }), el("small", { text: t.sub + " · " + mm.fmt(r.s[t.k]) }), whoLine(r)));
+    });
+    if (tg.childNodes.length) v.append(el("section", { class: "titles" }, el("h2", { text: "Titel" }), tg));
+  }
+
+  function statCell(p, x) { return el("div", {}, el("b", { text: x.fmt(p.s[x.k] || 0) }), el("span", { text: x.label })); }
+
+  function miniList(items, color) {
+    if (!items || !items.length) return el("p", { class: "empty", text: "Keine Einträge." });
+    var max = items[0][1] || 1;
+    var box = el("div", { class: "mini" });
+    items.forEach(function (it) {
+      var fill = el("div", { class: "fill" }); fill.style.width = (it[1] / max * 100) + "%";
+      var track = el("div", { class: "track" }, fill); track.style.setProperty("--c", color);
+      box.append(el("div", { class: "line" }, el("span", { text: pretty(it[0]) }), el("code", { text: fmtInt(it[1]) }), track));
+    });
+    return box;
+  }
+
+  function renderPlayers(v, list) {
+    var rows = sorted(list, "play");
+    if (!S.selected || !rows.some(function (p) { return p.id === S.selected; })) S.selected = null;
+    var grid = el("div", { class: "players" });
+    rows.forEach(function (p) {
+      var b = el("button", { class: "pcard", "aria-pressed": String(p.id === S.selected), onclick: function () { S.selected = p.id === S.selected ? null : p.id; render(); } },
+        el("div", { class: "top" }, avatar(p.id, true), el("div", {}, el("strong", { text: p.name }), el("small", { text: fmtTime(p.s.play) }))));
+      b.style.setProperty("--c", colorOf(p.id));
+      grid.append(b);
+    });
+    v.append(el("h2", { text: "Spieler" }), grid);
+    var p = rows.filter(function (x) { return x.id === S.selected; })[0];
+    if (!p) { v.append(el("p", { class: "empty", style: "margin-top:16px", text: "Wähle einen Spieler für alle Details." })); return; }
+    var color = colorOf(p.id);
+    var sg = el("div", { class: "statgrid" });
+    METRICS.concat(DETAIL_EXTRA).forEach(function (x) { sg.append(statCell(p, x)); });
+    v.append(el("section", { class: "detail" },
+      el("header", {}, avatar(p.id, true), el("h2", { text: p.name })),
+      sg,
+      el("div", { class: "lists" },
+        el("div", {}, el("h3", { text: "Meist abgebaut" }), miniList(p.s.topMined, color)),
+        el("div", {}, el("h3", { text: "Meist getötet" }), miniList(p.s.topKilled, color)),
+        el("div", {}, el("h3", { text: "Gestorben durch" }), miniList(p.s.killedBy, color)))));
+  }
+
+  function renderCompare(v, list) {
+    var rows = sorted(list, "play");
+    var ids = rows.map(function (p) { return p.id; });
+    if (rows.length < 2) { v.append(el("h2", { text: "Vergleich" }), el("p", { class: "empty", text: "Für einen Vergleich werden mindestens zwei Spieler gebraucht." })); return; }
+    if (ids.indexOf(S.cmpA) < 0) S.cmpA = ids[0];
+    if (ids.indexOf(S.cmpB) < 0 || S.cmpB === S.cmpA) S.cmpB = ids.filter(function (i) { return i !== S.cmpA; })[0];
+    function picker(id, key, label) {
+      var s = el("select", { id: "cmp-" + key, "aria-label": label, onchange: function (e) { S[key === "a" ? "cmpA" : "cmpB"] = e.target.value; render(); } });
+      rows.forEach(function (p) { s.append(el("option", { value: p.id, text: p.name, selected: p.id === id })); });
+      return s;
+    }
+    var A = rows.filter(function (p) { return p.id === S.cmpA; })[0];
+    var B = rows.filter(function (p) { return p.id === S.cmpB; })[0];
+    v.append(el("h2", { text: "Vergleich" }),
+      el("div", { class: "pick" }, picker(S.cmpA, "a", "Erster Spieler"), el("span", { class: "vs", text: "gegen" }), picker(S.cmpB, "b", "Zweiter Spieler")));
+    var box = el("div", { class: "cmp" });
+    METRICS.forEach(function (m) {
+      var a = A.s[m.k] || 0, b = B.s[m.k] || 0, mx = Math.max(a, b, 1);
+      var l = el("i"); l.style.width = (a / mx * 100) + "%";
+      var r = el("i"); r.style.width = (b / mx * 100) + "%";
+      var hl = el("div", { class: "half l" }, l); hl.style.setProperty("--c", colorOf(A.id));
+      var hr = el("div", { class: "half" }, r); hr.style.setProperty("--c", colorOf(B.id));
+      box.append(el("div", {}, el("div", { class: "lab", text: m.label }),
+        el("div", { class: "duel" },
+          el("span", { class: "num" + (a > b ? " w" : ""), text: m.fmt(a) }), hl, el("div", { class: "mid" }), hr,
+          el("span", { class: "num r" + (b > a ? " w" : ""), text: m.fmt(b) }))));
+    });
+    v.append(box);
+  }
+
+  /* ---------- boot ---------- */
+  var EMPTY_NOTE = "Das sind erfundene Beispielspieler, damit du siehst, wie die Seite aussehen wird. Sobald stats.json echte Daten enthält, verschwinden sie.";
+  function toDemo(reason) { S.status = "demo"; S.reason = reason; render(); }
+  function load() {
+    return fetch("stats.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("http"); return r.json(); })
+      .then(function (j) {
+        S.serverName = j.server || "";
+        S.updated = j.updated || null;
+        S.players = (j.players || []).map(function (p) { return { id: p.id, name: p.name || "Spieler", s: p.s || {} }; });
+        if (S.players.length) { S.status = "live"; S.reason = ""; }
+        else { S.status = "demo"; S.reason = EMPTY_NOTE; }
+        render();
+      })
+      .catch(function () { if (S.status === "loading") toDemo("stats.json wurde nicht gefunden. " + EMPTY_NOTE); });
+  }
+  render();
+  load();
+  setInterval(load, 120000);
+})();
+</script>
