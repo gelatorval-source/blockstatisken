@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4029639,
+    "play": 4059639,
     "deaths": 6,
-    "mobKills": 3593,
+    "mobKills": 4414,
     "playerKills": 0,
-    "mined": 44119,
-    "crafted": 25396,
-    "km": 299.19,
-    "jumps": 30170,
-    "dmg": 11682,
-    "dmgTaken": 2043,
+    "mined": 44445,
+    "crafted": 25745,
+    "km": 301.39,
+    "jumps": 30391,
+    "dmg": 11752,
+    "dmgTaken": 2047,
     "fish": 0,
     "bred": 216,
     "trades": 356,
@@ -25,11 +25,11 @@
      ],
      [
       "grass_block",
-      5847
+      5856
      ],
      [
       "stone",
-      5685
+      5778
      ],
      [
       "netherrack",
@@ -37,11 +37,11 @@
      ],
      [
       "dirt",
-      2002
+      2035
      ],
      [
       "wheat",
-      1815
+      1818
      ],
      [
       "oak_leaves",
@@ -55,15 +55,15 @@
     "topKilled": [
      [
       "silverfish",
-      2837
+      3592
      ],
      [
       "zombie",
-      194
+      195
      ],
      [
       "skeleton",
-      131
+      132
      ],
      [
       "spider",
@@ -111,15 +111,15 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2244588,
+    "play": 2274588,
     "deaths": 2,
-    "mobKills": 5569,
+    "mobKills": 5581,
     "playerKills": 0,
-    "mined": 30385,
-    "crafted": 14015,
-    "km": 164.34,
-    "jumps": 35705,
-    "dmg": 9566,
+    "mined": 30476,
+    "crafted": 14040,
+    "km": 165.82,
+    "jumps": 35926,
+    "dmg": 9698,
     "dmgTaken": 2146,
     "fish": 0,
     "bred": 55,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      7461
+      7517
      ],
      [
       "dirt",
@@ -155,7 +155,7 @@
      ],
      [
       "gravel",
-      627
+      640
      ]
     ],
     "topKilled": [
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T19:14:15+00:00"
+ "updated": "2026-10-24T19:41:30+00:00"
 }
