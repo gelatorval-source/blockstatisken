@@ -5,18 +5,18 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4059639,
+    "play": 4119639,
     "deaths": 6,
-    "mobKills": 4414,
+    "mobKills": 5952,
     "playerKills": 0,
-    "mined": 44445,
-    "crafted": 25745,
-    "km": 301.39,
-    "jumps": 30391,
-    "dmg": 11752,
-    "dmgTaken": 2047,
+    "mined": 44736,
+    "crafted": 26153,
+    "km": 306.03,
+    "jumps": 30766,
+    "dmg": 12067,
+    "dmgTaken": 2050,
     "fish": 0,
-    "bred": 216,
+    "bred": 269,
     "trades": 356,
     "topMined": [
      [
@@ -25,23 +25,23 @@
      ],
      [
       "grass_block",
-      5856
+      5857
      ],
      [
       "stone",
-      5778
+      5785
      ],
      [
       "netherrack",
-      4435
+      4467
      ],
      [
       "dirt",
-      2035
+      2039
      ],
      [
       "wheat",
-      1818
+      1866
      ],
      [
       "oak_leaves",
@@ -49,13 +49,13 @@
      ],
      [
       "sugar_cane",
-      1076
+      1182
      ]
     ],
     "topKilled": [
      [
       "silverfish",
-      3592
+      5052
      ],
      [
       "zombie",
@@ -70,19 +70,19 @@
       80
      ],
      [
+      "cow",
+      45
+     ],
+     [
       "creeper",
       37
      ],
      [
-      "cow",
-      30
+      "sheep",
+      35
      ],
      [
       "cave_spider",
-      20
-     ],
-     [
-      "sheep",
       20
      ]
     ],
@@ -111,14 +111,14 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2274588,
+    "play": 2326682,
     "deaths": 2,
     "mobKills": 5581,
     "playerKills": 0,
-    "mined": 30476,
-    "crafted": 14040,
-    "km": 165.82,
-    "jumps": 35926,
+    "mined": 30641,
+    "crafted": 14106,
+    "km": 166.62,
+    "jumps": 36061,
     "dmg": 9698,
     "dmgTaken": 2146,
     "fish": 0,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      7517
+      7567
      ],
      [
       "dirt",
@@ -155,7 +155,7 @@
      ],
      [
       "gravel",
-      640
+      646
      ]
     ],
     "topKilled": [
@@ -208,23 +208,23 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2025294,
+    "play": 2033714,
     "deaths": 1,
-    "mobKills": 2719,
+    "mobKills": 2721,
     "playerKills": 0,
-    "mined": 16132,
+    "mined": 16133,
     "crafted": 6003,
-    "km": 150.07,
-    "jumps": 15001,
-    "dmg": 5248,
-    "dmgTaken": 358,
+    "km": 151.04,
+    "jumps": 15118,
+    "dmg": 5292,
+    "dmgTaken": 359,
     "fish": 0,
     "bred": 0,
     "trades": 93,
     "topMined": [
      [
       "grass_block",
-      2321
+      2322
      ],
      [
       "deepslate",
@@ -262,11 +262,11 @@
      ],
      [
       "zombie",
-      127
+      128
      ],
      [
       "skeleton",
-      61
+      62
      ],
      [
       "spider",
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T19:41:30+00:00"
+ "updated": "2026-10-24T20:31:08+00:00"
 }
