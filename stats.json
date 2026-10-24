@@ -5,14 +5,14 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 3999639,
+    "play": 4029639,
     "deaths": 6,
     "mobKills": 3593,
     "playerKills": 0,
-    "mined": 43728,
-    "crafted": 25391,
-    "km": 297.46,
-    "jumps": 29984,
+    "mined": 44119,
+    "crafted": 25396,
+    "km": 299.19,
+    "jumps": 30170,
     "dmg": 11682,
     "dmgTaken": 2043,
     "fish": 0,
@@ -25,23 +25,23 @@
      ],
      [
       "grass_block",
-      5816
+      5847
      ],
      [
       "stone",
-      5584
+      5685
      ],
      [
       "netherrack",
       4435
      ],
      [
-      "wheat",
-      1815
+      "dirt",
+      2002
      ],
      [
-      "dirt",
-      1783
+      "wheat",
+      1815
      ],
      [
       "oak_leaves",
@@ -111,14 +111,14 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2214588,
+    "play": 2244588,
     "deaths": 2,
-    "mobKills": 2932,
+    "mobKills": 5569,
     "playerKills": 0,
     "mined": 30385,
-    "crafted": 13817,
-    "km": 163.44,
-    "jumps": 35591,
+    "crafted": 14015,
+    "km": 164.34,
+    "jumps": 35705,
     "dmg": 9566,
     "dmgTaken": 2146,
     "fish": 0,
@@ -161,7 +161,7 @@
     "topKilled": [
      [
       "silverfish",
-      2267
+      4652
      ],
      [
       "zombie",
@@ -310,16 +310,16 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 777541,
-    "deaths": 3,
-    "mobKills": 40,
+    "play": 799185,
+    "deaths": 4,
+    "mobKills": 42,
     "playerKills": 0,
-    "mined": 7727,
+    "mined": 7828,
     "crafted": 3439,
-    "km": 45.86,
-    "jumps": 5271,
-    "dmg": 454,
-    "dmgTaken": 285,
+    "km": 47.33,
+    "jumps": 5566,
+    "dmg": 474,
+    "dmgTaken": 360,
     "fish": 0,
     "bred": 16,
     "trades": 0,
@@ -342,7 +342,7 @@
      ],
      [
       "deepslate",
-      431
+      505
      ],
      [
       "oak_log",
@@ -354,7 +354,7 @@
      ],
      [
       "short_grass",
-      148
+      151
      ]
     ],
     "topKilled": [
@@ -375,15 +375,15 @@
       5
      ],
      [
+      "spider",
+      5
+     ],
+     [
       "zombie",
       4
      ],
      [
       "chicken",
-      4
-     ],
-     [
-      "spider",
       4
      ],
      [
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T18:49:48+00:00"
+ "updated": "2026-10-24T19:14:15+00:00"
 }
