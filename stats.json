@@ -1,0 +1,381 @@
+{
+ "server": "Geyser",
+ "players": [
+  {
+   "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
+   "name": "326Siyar",
+   "s": {
+    "play": 3654402,
+    "deaths": 6,
+    "mobKills": 3588,
+    "playerKills": 0,
+    "mined": 42760,
+    "crafted": 24112,
+    "km": 288.67,
+    "jumps": 29341,
+    "dmg": 11603,
+    "dmgTaken": 2020,
+    "fish": 0,
+    "bred": 180,
+    "trades": 298,
+    "topMined": [
+     [
+      "deepslate",
+      7235
+     ],
+     [
+      "grass_block",
+      5813
+     ],
+     [
+      "stone",
+      5584
+     ],
+     [
+      "netherrack",
+      4435
+     ],
+     [
+      "dirt",
+      1756
+     ],
+     [
+      "wheat",
+      1587
+     ],
+     [
+      "oak_leaves",
+      1435
+     ],
+     [
+      "sugar_cane",
+      969
+     ]
+    ],
+    "topKilled": [
+     [
+      "silverfish",
+      2837
+     ],
+     [
+      "zombie",
+      193
+     ],
+     [
+      "skeleton",
+      131
+     ],
+     [
+      "spider",
+      79
+     ],
+     [
+      "creeper",
+      37
+     ],
+     [
+      "cow",
+      30
+     ],
+     [
+      "cave_spider",
+      20
+     ],
+     [
+      "sheep",
+      20
+     ]
+    ],
+    "killedBy": [
+     [
+      "zombie",
+      2
+     ],
+     [
+      "creeper",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
+   "name": "Huccil",
+   "s": {
+    "play": 2105877,
+    "deaths": 2,
+    "mobKills": 2661,
+    "playerKills": 0,
+    "mined": 29752,
+    "crafted": 11781,
+    "km": 155.06,
+    "jumps": 33835,
+    "dmg": 9084,
+    "dmgTaken": 2090,
+    "fish": 0,
+    "bred": 29,
+    "trades": 0,
+    "topMined": [
+     [
+      "deepslate",
+      8372
+     ],
+     [
+      "stone",
+      7164
+     ],
+     [
+      "dirt",
+      2287
+     ],
+     [
+      "spruce_log",
+      1780
+     ],
+     [
+      "oak_log",
+      905
+     ],
+     [
+      "grass_block",
+      733
+     ],
+     [
+      "tuff",
+      696
+     ],
+     [
+      "gravel",
+      627
+     ]
+    ],
+    "topKilled": [
+     [
+      "silverfish",
+      2038
+     ],
+     [
+      "zombie",
+      109
+     ],
+     [
+      "skeleton",
+      89
+     ],
+     [
+      "spider",
+      81
+     ],
+     [
+      "cow",
+      77
+     ],
+     [
+      "sheep",
+      59
+     ],
+     [
+      "pig",
+      41
+     ],
+     [
+      "chicken",
+      41
+     ]
+    ],
+    "killedBy": []
+   }
+  },
+  {
+   "id": "89d9388c-2466-4838-9190-bfb244726a0c",
+   "name": "50_Eric",
+   "s": {
+    "play": 2025294,
+    "deaths": 1,
+    "mobKills": 2719,
+    "playerKills": 0,
+    "mined": 16132,
+    "crafted": 6003,
+    "km": 150.07,
+    "jumps": 15001,
+    "dmg": 5248,
+    "dmgTaken": 358,
+    "fish": 0,
+    "bred": 0,
+    "trades": 93,
+    "topMined": [
+     [
+      "grass_block",
+      2321
+     ],
+     [
+      "deepslate",
+      1637
+     ],
+     [
+      "wheat",
+      1554
+     ],
+     [
+      "stone",
+      1310
+     ],
+     [
+      "sugar_cane",
+      1262
+     ],
+     [
+      "dirt",
+      1168
+     ],
+     [
+      "netherrack",
+      1127
+     ],
+     [
+      "oak_log",
+      753
+     ]
+    ],
+    "topKilled": [
+     [
+      "silverfish",
+      2264
+     ],
+     [
+      "zombie",
+      127
+     ],
+     [
+      "skeleton",
+      61
+     ],
+     [
+      "spider",
+      24
+     ],
+     [
+      "creeper",
+      13
+     ],
+     [
+      "sheep",
+      11
+     ],
+     [
+      "drowned",
+      11
+     ],
+     [
+      "cow",
+      10
+     ]
+    ],
+    "killedBy": [
+     [
+      "enderman",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
+   "name": "MUSKELMAUSI",
+   "s": {
+    "play": 705541,
+    "deaths": 3,
+    "mobKills": 31,
+    "playerKills": 0,
+    "mined": 6857,
+    "crafted": 3393,
+    "km": 42.54,
+    "jumps": 5071,
+    "dmg": 411,
+    "dmgTaken": 267,
+    "fish": 0,
+    "bred": 11,
+    "trades": 0,
+    "topMined": [
+     [
+      "stone",
+      1688
+     ],
+     [
+      "dirt",
+      1583
+     ],
+     [
+      "grass_block",
+      1183
+     ],
+     [
+      "sand",
+      546
+     ],
+     [
+      "oak_log",
+      224
+     ],
+     [
+      "coal_ore",
+      158
+     ],
+     [
+      "short_grass",
+      148
+     ],
+     [
+      "birch_log",
+      127
+     ]
+    ],
+    "topKilled": [
+     [
+      "sheep",
+      6
+     ],
+     [
+      "skeleton",
+      5
+     ],
+     [
+      "zombie",
+      4
+     ],
+     [
+      "chicken",
+      4
+     ],
+     [
+      "spider",
+      4
+     ],
+     [
+      "pig",
+      3
+     ],
+     [
+      "salmon",
+      1
+     ],
+     [
+      "pillager",
+      1
+     ]
+    ],
+    "killedBy": [
+     [
+      "zombie",
+      2
+     ],
+     [
+      "skeleton",
+      1
+     ]
+    ]
+   }
+  }
+ ],
+ "updated": "2026-10-24T00:37:10+00:00"
+}
