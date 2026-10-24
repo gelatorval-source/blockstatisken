@@ -5,15 +5,15 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 3941881,
+    "play": 3957639,
     "deaths": 6,
-    "mobKills": 3589,
+    "mobKills": 3590,
     "playerKills": 0,
-    "mined": 43494,
-    "crafted": 25085,
-    "km": 292.5,
-    "jumps": 29499,
-    "dmg": 11616,
+    "mined": 43495,
+    "crafted": 25086,
+    "km": 294.48,
+    "jumps": 29750,
+    "dmg": 11634,
     "dmgTaken": 2027,
     "fish": 0,
     "bred": 216,
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2149843,
+    "play": 2172588,
     "deaths": 2,
     "mobKills": 2664,
     "playerKills": 0,
-    "mined": 29967,
-    "crafted": 12062,
-    "km": 156.53,
-    "jumps": 34257,
+    "mined": 30278,
+    "crafted": 12309,
+    "km": 158.55,
+    "jumps": 34644,
     "dmg": 9130,
-    "dmgTaken": 2120,
+    "dmgTaken": 2130,
     "fish": 0,
     "bred": 29,
     "trades": 0,
@@ -131,11 +131,11 @@
      ],
      [
       "stone",
-      7228
+      7440
      ],
      [
       "dirt",
-      2307
+      2370
      ],
      [
       "spruce_log",
@@ -310,35 +310,35 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 711541,
+    "play": 735541,
     "deaths": 3,
     "mobKills": 37,
     "playerKills": 0,
-    "mined": 6879,
-    "crafted": 3393,
-    "km": 42.72,
-    "jumps": 5073,
-    "dmg": 413,
-    "dmgTaken": 270,
+    "mined": 7070,
+    "crafted": 3394,
+    "km": 44.87,
+    "jumps": 5156,
+    "dmg": 415,
+    "dmgTaken": 282,
     "fish": 0,
-    "bred": 11,
+    "bred": 14,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      1710
+      1809
      ],
      [
       "dirt",
-      1583
+      1586
      ],
      [
       "grass_block",
-      1183
+      1195
      ],
      [
       "sand",
-      546
+      560
      ],
      [
       "oak_log",
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T17:55:40+00:00"
+ "updated": "2026-10-24T18:14:55+00:00"
 }
