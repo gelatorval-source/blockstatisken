@@ -1,5 +1,9 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blockstatistik</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Pixelify+Sans:wght@500;700&display=swap">
@@ -59,6 +63,29 @@ h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(32px, 7vw
   .strip > div:nth-child(n+3) { border-top: 1px solid var(--line); }
 }
 
+.onl { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.onl:empty { display: none; }
+.onl .lbl { font-family: var(--f-mono); font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-right: 4px; }
+.pill { display: inline-flex; gap: 6px; align-items: center; border: 1px solid var(--line); background: var(--surface); padding: 2px 10px 2px 4px; font-size: 14px; min-width: 0; }
+.pill .avatar { width: 18px; height: 18px; }
+.pill code { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.pill.on { border-color: var(--accent); }
+.sect { margin-top: 36px; }
+.mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.mile { border: 1px solid var(--line); background: var(--surface); padding: 12px 14px; min-width: 0; }
+.mile b { display: block; font-family: var(--f-display); font-size: 18px; margin-bottom: 8px; }
+.mile .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.mile small { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+.feed { border-top: 1px solid var(--line); }
+.ev { display: grid; grid-template-columns: 12ch 10px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.ev time { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.ev i { width: 10px; height: 10px; display: inline-block; background: var(--k); }
+.ev span { overflow-wrap: anywhere; }
+.ev b { font-weight: 700; }
+.ev.death { color: var(--ink); }
+@media (max-width: 480px) { .ev { grid-template-columns: 10px minmax(0, 1fr); } .ev time { grid-column: 2; } .ev i { grid-row: 1 / span 2; align-self: start; margin-top: 6px; } }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.cols > div { min-width: 0; }
 .note { margin: 16px 0 0; padding: 10px 14px; border: 1px dashed var(--gold); color: var(--ink); background: var(--surface); font-size: 14px; }
 
 nav.tabs { display: flex; gap: 4px; margin-top: 24px; border-bottom: 2px solid var(--line); overflow-x: auto; }
@@ -153,8 +180,11 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
 .err { color: var(--warn); }
 .bar-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
 @media (prefers-reduced-motion: no-preference) { .fill, .cmp .half i { transition: width .35s ease; } }
+body { margin: 0; }
+[hidden] { display: none !important; }
 </style>
-
+</head>
+<body>
 <div class="grass"></div>
 <div class="wrap">
   <header>
@@ -165,6 +195,7 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
     <span class="chip" id="status-chip"><i></i><span>Lade …</span></span>
   </header>
   <div class="strip" id="strip"></div>
+  <div class="onl" id="online"></div>
   <div id="notice"></div>
   <nav class="tabs" role="tablist" id="tabs"></nav>
   <main id="view"></main>
@@ -290,6 +321,7 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
         km: Math.round((f * 96 + (hash(id) % 20)) * 10) / 10, jumps: Math.round(f * 5200 + hash(id) % 800),
         dmg: Math.round(f * 3600), dmgTaken: Math.round(f * 2100), fish: Math.round(f * 12 + hash(id) % 20),
         bred: Math.round(f * 18), trades: Math.round(f * 9),
+        ms: { dragon: id === "demo-0004" ? 1 : 0, wither: id === "demo-0001" ? 2 : 0, warden: 0, elder: id === "demo-0002" ? 1 : 0, diamonds: Math.round(f * 14), emeralds: Math.round(f * 3), debris: Math.round(f * 4) },
         topMined: [["stone", Math.round(f * 2100)], ["deepslate", Math.round(f * 1800)], ["dirt", Math.round(f * 900)], ["iron_ore", Math.round(f * 260)], ["oak_log", Math.round(f * 240)], ["diamond_ore", Math.round(f * 30)]],
         topKilled: [["zombie", Math.round(f * 120)], ["skeleton", Math.round(f * 90)], ["creeper", Math.round(f * 55)], ["spider", Math.round(f * 40)], ["enderman", Math.round(f * 18)]],
         killedBy: [["creeper", Math.round(f * 3)], ["zombie", Math.round(f * 2)], ["skeleton", Math.round(f * 2)]]
@@ -301,6 +333,33 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
     ];
   }
 
+  function demoExtras() {
+    var now = Date.now(), mins = function (m) { return new Date(now - m * 60000).toISOString(); };
+    return {
+      world: { version: "Beispiel", day: 37, age: 36, weather: "Klar", difficulty: "Normal", mode: "Überleben", hardcore: false },
+      online: ["LunaMine", "Noxus"],
+      causes: { "wurde von Creeper in die Luft gesprengt": 4, "ist in Lava geschwommen": 3, "ist von einem hohen Ort gefallen": 3, "wurde von Zombie erschlagen": 2, "ist ertrunken": 1, "wurde von einem Amboss zerquetscht": 1 },
+      feed: [
+        { ts: mins(3), kind: "adv", p: "LunaMine", text: "hat die Herausforderung «Monster Hunter» gemeistert" },
+        { ts: mins(11), kind: "death", p: "Creeper_Kai", text: "ist in Lava geschwommen" },
+        { ts: mins(26), kind: "join", p: "Noxus", text: "ist beigetreten" },
+        { ts: mins(48), kind: "leave", p: "BauMeisterBen", text: "hat den Server verlassen" },
+        { ts: mins(95), kind: "death", p: "Pixelpia", text: "wurde von einem Amboss zerquetscht" },
+        { ts: mins(190), kind: "adv", p: "BauMeisterBen", text: "hat den Fortschritt «Diamanten!» erreicht" }
+      ]
+    };
+  }
+  var MILES = [
+    { k: "dragon", label: "Enderdrache besiegt", boss: 1 },
+    { k: "wither", label: "Wither besiegt", boss: 1 },
+    { k: "warden", label: "Warden besiegt", boss: 1 },
+    { k: "elder", label: "Wächter-Ältester besiegt", boss: 1 },
+    { k: "diamonds", label: "Diamanten abgebaut" },
+    { k: "emeralds", label: "Smaragde abgebaut" },
+    { k: "debris", label: "Antiker Schutt abgebaut" }
+  ];
+  var KIND_COLOR = { death: "var(--warn)", join: "var(--accent)", leave: "var(--muted)", adv: "var(--gold)" };
+
   /* ---------- state ---------- */
   var S = {
     status: "loading", // loading | live | demo
@@ -309,7 +368,7 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
     serverName: "",
     canWrite: false,
     tab: "board", metric: "play", selected: null, cmpA: null, cmpB: null,
-    updated: null
+    updated: null, world: null, feed: [], online: [], causes: {}
   };
   try { var t = localStorage.getItem("bs-tab"); if (t) S.tab = t; } catch (e) {}
 
@@ -325,7 +384,8 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
     if (S.status === "loading") { v.append(el("p", { class: "empty", text: "Statistiken werden geladen …" })); return; }
     if (S.tab === "admin") S.tab = "board";
     if (!list.length) { v.append(el("p", { class: "empty", text: "Noch keine Statistiken vorhanden." })); return; }
-    if (S.tab === "players") renderPlayers(v, list);
+    if (S.tab === "server") renderServer(v);
+    else if (S.tab === "players") renderPlayers(v, list);
     else if (S.tab === "compare") renderCompare(v, list);
     else renderBoard(v, list);
   }
@@ -342,13 +402,19 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
     var tot = function (k) { return list.reduce(function (a, p) { return a + (p.s[k] || 0); }, 0); };
     [[fmtInt(list.length), "Spieler"], [fmtTime(tot("play")), "Spielzeit gesamt"], [fmtInt(tot("deaths")), "Tode gesamt"], [fmtInt(tot("mined")), "Blöcke abgebaut"]]
       .forEach(function (x) { strip.append(el("div", {}, el("b", { text: x[0] }), el("span", { text: x[1] }))); });
+    var on = document.getElementById("online");
+    on.replaceChildren();
+    if (S.status !== "loading" && S.online && S.online.length) {
+      on.append(el("span", { class: "lbl", text: "Gerade online" }));
+      S.online.forEach(function (n) { on.append(namePill(n, "on")); });
+    }
     var n = document.getElementById("notice");
     n.replaceChildren();
     if (S.status === "demo") n.append(el("p", { class: "note", text: S.reason }));
   }
 
   function renderTabs() {
-    var tabs = [["board", "Rangliste"], ["players", "Spieler"], ["compare", "Vergleich"]];
+    var tabs = [["board", "Rangliste"], ["server", "Server"], ["players", "Spieler"], ["compare", "Vergleich"]];
     if (S.canWrite) tabs.push(["admin", "Verwalten"]);
     var nav = document.getElementById("tabs");
     nav.replaceChildren();
@@ -392,6 +458,86 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
       tg.append(el("div", { class: "title" }, el("b", { text: t.title }), el("small", { text: t.sub + " · " + mm.fmt(r.s[t.k]) }), whoLine(r)));
     });
     if (tg.childNodes.length) v.append(el("section", { class: "titles" }, el("h2", { text: "Titel" }), tg));
+    v.append(renderMiles(list), renderCauses(list));
+  }
+
+  function idByName(n) {
+    var l = shown().filter(function (p) { return p.name === n; });
+    return l.length ? l[0].id : n;
+  }
+  function namePill(n, cls, extra) {
+    return el("span", { class: "pill" + (cls ? " " + cls : "") }, avatar(idByName(n)), n, extra ? el("code", { text: extra }) : null);
+  }
+
+  function renderMiles(list) {
+    var g = el("div", { class: "mgrid" });
+    MILES.forEach(function (m) {
+      var cnt = function (p) { return (p.s.ms || {})[m.k] || 0; };
+      var have = list.filter(function (p) { return cnt(p) > 0; }).sort(function (a, b) { return cnt(b) - cnt(a); });
+      var pills = el("div", { class: "pills" });
+      have.forEach(function (p) { pills.append(namePill(p.name, "", m.boss ? cnt(p) + "×" : fmtInt(cnt(p)))); });
+      var box = el("div", { class: "mile" }, el("b", { text: m.label }), have.length ? pills : el("span", { class: "empty", text: "Noch niemand." }));
+      if (m.boss && have.length && have.length < list.length) {
+        box.append(el("small", { text: "Fehlt noch: " + list.filter(function (p) { return cnt(p) === 0; }).map(function (p) { return p.name; }).join(", ") }));
+      }
+      g.append(box);
+    });
+    return el("section", { class: "sect" }, el("h2", { text: "Meilensteine" }), g);
+  }
+
+  function renderCauses(list) {
+    var mob = {};
+    list.forEach(function (p) { (p.s.killedBy || []).forEach(function (e) { mob[e[0]] = (mob[e[0]] || 0) + e[1]; }); });
+    var mobList = Object.keys(mob).map(function (k) { return [k, mob[k]]; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 8);
+    var logList = Object.keys(S.causes || {}).map(function (k) { return [k, S.causes[k]]; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 10);
+    var color = "var(--warn)";
+    return el("section", { class: "sect" }, el("h2", { text: "Todesursachen" }),
+      el("div", { class: "cols" },
+        el("div", {}, el("h3", { text: "Von Mobs getötet (gesamt)" }), miniList(mobList.map(function (e) { return [e[0], e[1]]; }), color)),
+        el("div", {}, el("h3", { text: "Alle Todesarten seit Aufzeichnung" }),
+          logList.length ? miniListText(logList, color) : el("p", { class: "empty", text: "Noch keine Tode aufgezeichnet." }))));
+  }
+  function miniListText(items, color) {
+    var max = items[0][1] || 1, box = el("div", { class: "mini" });
+    items.forEach(function (it) {
+      var fill = el("div", { class: "fill" }); fill.style.width = (it[1] / max * 100) + "%";
+      var track = el("div", { class: "track" }, fill); track.style.setProperty("--c", color);
+      box.append(el("div", { class: "line" }, el("span", { text: "Jemand " + it[0] }), el("code", { text: fmtInt(it[1]) + "×" }), track));
+    });
+    return box;
+  }
+
+  function fmtWhen(iso) {
+    var d = new Date(iso), n = new Date();
+    var hm = d.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+    var day0 = function (x) { return new Date(x.getFullYear(), x.getMonth(), x.getDate()).getTime(); };
+    var diff = Math.round((day0(n) - day0(d)) / 86400000);
+    if (diff === 0) return "Heute " + hm;
+    if (diff === 1) return "Gestern " + hm;
+    return d.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" }) + " " + hm;
+  }
+
+  function renderServer(v) {
+    v.append(el("h2", { text: "Server" }));
+    var w = S.world;
+    if (w) {
+      var cells = [
+        ["Minecraft-Version", w.version], ["Spieltag", w.day != null ? fmtInt(w.day) : null],
+        ["Weltalter", w.age != null ? fmtInt(w.age) + " Tage" : null], ["Wetter", w.weather],
+        ["Schwierigkeit", w.difficulty], ["Spielmodus", w.mode], ["Hardcore", w.hardcore == null ? null : (w.hardcore ? "Ja" : "Nein")]
+      ].filter(function (c) { return c[1] != null && c[1] !== ""; });
+      var g = el("div", { class: "statgrid" });
+      cells.forEach(function (c) { g.append(el("div", {}, el("b", { text: String(c[1]) }), el("span", { text: c[0] }))); });
+      v.append(el("section", {}, el("h3", { text: "Welt" }), g));
+    }
+    var feed = el("div", { class: "feed" });
+    (S.feed || []).slice(0, 40).forEach(function (e) {
+      var row = el("div", { class: "ev " + e.kind }, el("time", { datetime: e.ts, text: fmtWhen(e.ts) }), el("i"), el("span", {}, el("b", { text: e.p }), " " + e.text));
+      row.style.setProperty("--k", KIND_COLOR[e.kind] || "var(--muted)");
+      feed.append(row);
+    });
+    v.append(el("section", { class: "sect" }, el("h2", { text: "Live-Feed" }),
+      (S.feed || []).length ? feed : el("p", { class: "empty", text: "Noch keine Ereignisse. Der Feed füllt sich, sobald das Server-Log gelesen wurde." })));
   }
 
   function statCell(p, x) { return el("div", {}, el("b", { text: x.fmt(p.s[x.k] || 0) }), el("span", { text: x.label })); }
@@ -465,16 +611,18 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
 
   /* ---------- boot ---------- */
   var EMPTY_NOTE = "Das sind erfundene Beispielspieler, damit du siehst, wie die Seite aussehen wird. Sobald stats.json echte Daten enthält, verschwinden sie.";
-  function toDemo(reason) { S.status = "demo"; S.reason = reason; render(); }
+  function applyDemo() { var d = demoExtras(); S.world = d.world; S.feed = d.feed; S.online = d.online; S.causes = d.causes; }
+  function toDemo(reason) { S.status = "demo"; S.reason = reason; applyDemo(); render(); }
   function load() {
     return fetch("stats.json", { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("http"); return r.json(); })
       .then(function (j) {
         S.serverName = j.server || "";
         S.updated = j.updated || null;
+        S.world = j.world || null; S.feed = j.feed || []; S.online = j.online || []; S.causes = j.deathCauses || {};
         S.players = (j.players || []).map(function (p) { return { id: p.id, name: p.name || "Spieler", s: p.s || {} }; });
         if (S.players.length) { S.status = "live"; S.reason = ""; }
-        else { S.status = "demo"; S.reason = EMPTY_NOTE; }
+        else { S.status = "demo"; S.reason = EMPTY_NOTE; applyDemo(); }
         render();
       })
       .catch(function () { if (S.status === "loading") toDemo("stats.json wurde nicht gefunden. " + EMPTY_NOTE); });
@@ -484,3 +632,5 @@ select, input[type="text"] { font: inherit; padding: 8px 10px; background: var(-
   setInterval(load, 120000);
 })();
 </script>
+</body>
+</html>
