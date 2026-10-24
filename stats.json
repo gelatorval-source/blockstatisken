@@ -111,7 +111,7 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2147048,
+    "play": 2149843,
     "deaths": 2,
     "mobKills": 2664,
     "playerKills": 0,
@@ -310,23 +310,23 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 705541,
+    "play": 711541,
     "deaths": 3,
-    "mobKills": 31,
+    "mobKills": 37,
     "playerKills": 0,
-    "mined": 6857,
+    "mined": 6879,
     "crafted": 3393,
-    "km": 42.54,
-    "jumps": 5071,
-    "dmg": 411,
-    "dmgTaken": 267,
+    "km": 42.72,
+    "jumps": 5073,
+    "dmg": 413,
+    "dmgTaken": 270,
     "fish": 0,
     "bred": 11,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      1688
+      1710
      ],
      [
       "dirt",
@@ -359,6 +359,10 @@
     ],
     "topKilled": [
      [
+      "zombified_piglin",
+      6
+     ],
+     [
       "sheep",
       6
      ],
@@ -384,10 +388,6 @@
      ],
      [
       "salmon",
-      1
-     ],
-     [
-      "pillager",
       1
      ]
     ],
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T12:38:43+00:00"
+ "updated": "2026-10-24T17:55:40+00:00"
 }
