@@ -5,14 +5,14 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4325971,
+    "play": 4333841,
     "deaths": 6,
     "mobKills": 5971,
     "playerKills": 0,
-    "mined": 47397,
-    "crafted": 28739,
-    "km": 323.02,
-    "jumps": 32325,
+    "mined": 47417,
+    "crafted": 28919,
+    "km": 323.66,
+    "jumps": 32393,
     "dmg": 12448,
     "dmgTaken": 2089,
     "fish": 35,
@@ -111,23 +111,23 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2542576,
+    "play": 2566576,
     "deaths": 2,
-    "mobKills": 5584,
+    "mobKills": 5586,
     "playerKills": 0,
-    "mined": 33450,
-    "crafted": 16075,
-    "km": 182.13,
-    "jumps": 38284,
-    "dmg": 9751,
-    "dmgTaken": 2207,
+    "mined": 33562,
+    "crafted": 16122,
+    "km": 183.34,
+    "jumps": 38516,
+    "dmg": 9780,
+    "dmgTaken": 2216,
     "fish": 0,
     "bred": 55,
-    "trades": 27,
+    "trades": 53,
     "topMined": [
      [
       "stone",
-      8792
+      8868
      ],
      [
       "deepslate",
@@ -147,7 +147,7 @@
      ],
      [
       "cobblestone",
-      819
+      851
      ],
      [
       "grass_block",
@@ -165,7 +165,7 @@
      ],
      [
       "zombie",
-      111
+      112
      ],
      [
       "cow",
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-24T23:29:07+00:00"
+ "updated": "2026-10-24T23:50:07+00:00"
 }
