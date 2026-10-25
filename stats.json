@@ -5,19 +5,19 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4346074,
+    "play": 4382074,
     "deaths": 6,
-    "mobKills": 5972,
+    "mobKills": 5976,
     "playerKills": 0,
-    "mined": 47740,
-    "crafted": 28986,
-    "km": 324.57,
-    "jumps": 32432,
-    "dmg": 12475,
-    "dmgTaken": 2089,
+    "mined": 47859,
+    "crafted": 29239,
+    "km": 329.56,
+    "jumps": 32680,
+    "dmg": 12561,
+    "dmgTaken": 2114,
     "fish": 35,
     "bred": 324,
-    "trades": 490,
+    "trades": 506,
     "topMined": [
      [
       "deepslate",
@@ -29,7 +29,7 @@
      ],
      [
       "grass_block",
-      5865
+      5866
      ],
      [
       "netherrack",
@@ -45,7 +45,7 @@
      ],
      [
       "oak_leaves",
-      1435
+      1437
      ],
      [
       "sugar_cane",
@@ -75,7 +75,7 @@
      ],
      [
       "creeper",
-      37
+      38
      ],
      [
       "sheep",
@@ -111,23 +111,23 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2725946,
+    "play": 2759575,
     "deaths": 2,
-    "mobKills": 5586,
+    "mobKills": 5587,
     "playerKills": 0,
-    "mined": 33565,
-    "crafted": 16218,
-    "km": 183.86,
-    "jumps": 38613,
+    "mined": 34081,
+    "crafted": 16733,
+    "km": 187.49,
+    "jumps": 39409,
     "dmg": 9780,
-    "dmgTaken": 2223,
+    "dmgTaken": 2253,
     "fish": 0,
     "bred": 55,
-    "trades": 53,
+    "trades": 77,
     "topMined": [
      [
       "stone",
-      8868
+      8999
      ],
      [
       "deepslate",
@@ -135,23 +135,23 @@
      ],
      [
       "dirt",
-      2721
+      2734
      ],
      [
       "spruce_log",
       1785
      ],
      [
+      "cobblestone",
+      911
+     ],
+     [
       "oak_log",
       905
      ],
      [
-      "cobblestone",
-      854
-     ],
-     [
       "grass_block",
-      769
+      770
      ],
      [
       "tuff",
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T15:32:47+00:00"
+ "updated": "2026-10-25T16:03:26+00:00"
 }
