@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4592074,
+    "play": 4622074,
     "deaths": 6,
     "mobKills": 6018,
     "playerKills": 0,
-    "mined": 50201,
+    "mined": 50456,
     "crafted": 29511,
-    "km": 354.24,
-    "jumps": 35381,
+    "km": 357.86,
+    "jumps": 35826,
     "dmg": 13315,
-    "dmgTaken": 2279,
+    "dmgTaken": 2288,
     "fish": 35,
     "bred": 324,
     "trades": 506,
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2969575,
+    "play": 2999575,
     "deaths": 2,
-    "mobKills": 6825,
+    "mobKills": 6832,
     "playerKills": 0,
-    "mined": 47115,
+    "mined": 47116,
     "crafted": 17256,
-    "km": 205.28,
-    "jumps": 42756,
-    "dmg": 10116,
-    "dmgTaken": 2338,
+    "km": 209.69,
+    "jumps": 43748,
+    "dmg": 10307,
+    "dmgTaken": 2374,
     "fish": 0,
     "bred": 55,
     "trades": 141,
@@ -194,7 +194,7 @@
     ],
     "killedBy": [],
     "ms": {
-     "dragon": 0,
+     "dragon": 1,
      "wither": 0,
      "warden": 0,
      "elder": 0,
@@ -310,16 +310,16 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 895504,
-    "deaths": 5,
+    "play": 925504,
+    "deaths": 7,
     "mobKills": 51,
     "playerKills": 0,
     "mined": 8703,
     "crafted": 3785,
-    "km": 53.57,
-    "jumps": 6167,
-    "dmg": 603,
-    "dmgTaken": 432,
+    "km": 57.3,
+    "jumps": 6375,
+    "dmg": 609,
+    "dmgTaken": 493,
     "fish": 0,
     "bred": 27,
     "trades": 0,
@@ -393,6 +393,10 @@
     ],
     "killedBy": [
      [
+      "enderman",
+      2
+     ],
+     [
       "zombie",
       2
      ],
@@ -401,7 +405,7 @@
       1
      ],
      [
-      "enderman",
+      "ender_dragon",
       1
      ]
     ],
@@ -421,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T18:59:06+00:00"
+ "updated": "2026-10-25T19:21:46+00:00"
 }
