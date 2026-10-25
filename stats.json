@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4382074,
+    "play": 4457567,
     "deaths": 6,
-    "mobKills": 5976,
+    "mobKills": 5998,
     "playerKills": 0,
-    "mined": 47859,
-    "crafted": 29239,
-    "km": 329.56,
-    "jumps": 32680,
-    "dmg": 12561,
-    "dmgTaken": 2114,
+    "mined": 49727,
+    "crafted": 29382,
+    "km": 335.25,
+    "jumps": 33346,
+    "dmg": 12976,
+    "dmgTaken": 2189,
     "fish": 35,
     "bred": 324,
     "trades": 506,
@@ -24,16 +24,16 @@
       7235
      ],
      [
+      "netherrack",
+      6461
+     ],
+     [
       "stone",
       5916
      ],
      [
       "grass_block",
       5866
-     ],
-     [
-      "netherrack",
-      5049
      ],
      [
       "wheat",
@@ -63,7 +63,7 @@
      ],
      [
       "skeleton",
-      135
+      137
      ],
      [
       "spider",
@@ -111,51 +111,51 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2759575,
+    "play": 2835068,
     "deaths": 2,
-    "mobKills": 5587,
+    "mobKills": 5591,
     "playerKills": 0,
-    "mined": 34081,
-    "crafted": 16733,
-    "km": 187.49,
-    "jumps": 39409,
-    "dmg": 9780,
-    "dmgTaken": 2253,
+    "mined": 40734,
+    "crafted": 16957,
+    "km": 193.77,
+    "jumps": 40320,
+    "dmg": 9805,
+    "dmgTaken": 2275,
     "fish": 0,
     "bred": 55,
-    "trades": 77,
+    "trades": 93,
     "topMined": [
      [
       "stone",
-      8999
+      9066
      ],
      [
       "deepslate",
       8372
      ],
      [
+      "netherrack",
+      4115
+     ],
+     [
       "dirt",
-      2734
+      2740
+     ],
+     [
+      "basalt",
+      2199
      ],
      [
       "spruce_log",
-      1785
+      1787
      ],
      [
       "cobblestone",
-      911
+      922
      ],
      [
       "oak_log",
       905
-     ],
-     [
-      "grass_block",
-      770
-     ],
-     [
-      "tuff",
-      696
      ]
     ],
     "topKilled": [
@@ -165,7 +165,7 @@
      ],
      [
       "zombie",
-      112
+      113
      ],
      [
       "cow",
@@ -200,7 +200,7 @@
      "elder": 0,
      "diamonds": 177,
      "emeralds": 0,
-     "debris": 0
+     "debris": 17
     }
    }
   },
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T16:03:26+00:00"
+ "updated": "2026-10-25T17:04:23+00:00"
 }
