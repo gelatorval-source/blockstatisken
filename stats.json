@@ -208,27 +208,27 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2119815,
+    "play": 2134853,
     "deaths": 1,
-    "mobKills": 2721,
+    "mobKills": 2724,
     "playerKills": 0,
-    "mined": 16295,
+    "mined": 16497,
     "crafted": 6005,
-    "km": 153.51,
-    "jumps": 15304,
-    "dmg": 5292,
-    "dmgTaken": 360,
+    "km": 156.29,
+    "jumps": 15371,
+    "dmg": 5348,
+    "dmgTaken": 362,
     "fish": 0,
     "bred": 0,
     "trades": 93,
     "topMined": [
      [
       "grass_block",
-      2322
+      2327
      ],
      [
       "wheat",
-      1714
+      1874
      ],
      [
       "deepslate",
@@ -240,7 +240,7 @@
      ],
      [
       "sugar_cane",
-      1262
+      1299
      ],
      [
       "dirt",
@@ -262,11 +262,11 @@
      ],
      [
       "zombie",
-      128
+      129
      ],
      [
       "skeleton",
-      62
+      63
      ],
      [
       "spider",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T20:57:50+00:00"
+ "updated": "2026-10-25T23:43:31+00:00"
 }
