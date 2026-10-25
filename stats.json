@@ -5,23 +5,23 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4622074,
+    "play": 4655541,
     "deaths": 6,
-    "mobKills": 6018,
+    "mobKills": 6022,
     "playerKills": 0,
-    "mined": 50456,
-    "crafted": 29511,
-    "km": 357.86,
-    "jumps": 35826,
-    "dmg": 13315,
-    "dmgTaken": 2288,
+    "mined": 50976,
+    "crafted": 29517,
+    "km": 362.2,
+    "jumps": 36392,
+    "dmg": 13405,
+    "dmgTaken": 2299,
     "fish": 35,
     "bred": 324,
     "trades": 506,
     "topMined": [
      [
       "deepslate",
-      7244
+      7284
      ],
      [
       "netherrack",
@@ -29,11 +29,11 @@
      ],
      [
       "stone",
-      5944
+      6158
      ],
      [
       "grass_block",
-      5871
+      5873
      ],
      [
       "wheat",
@@ -41,7 +41,7 @@
      ],
      [
       "dirt",
-      2060
+      2063
      ],
      [
       "oak_leaves",
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2999575,
+    "play": 3033336,
     "deaths": 2,
-    "mobKills": 6832,
+    "mobKills": 6840,
     "playerKills": 0,
     "mined": 47116,
     "crafted": 17256,
-    "km": 209.69,
-    "jumps": 43748,
-    "dmg": 10307,
-    "dmgTaken": 2374,
+    "km": 213.15,
+    "jumps": 44526,
+    "dmg": 10494,
+    "dmgTaken": 2413,
     "fish": 0,
     "bred": 55,
     "trades": 141,
@@ -177,7 +177,7 @@
      ],
      [
       "spider",
-      85
+      86
      ],
      [
       "sheep",
@@ -310,16 +310,16 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 925504,
+    "play": 959098,
     "deaths": 7,
     "mobKills": 51,
     "playerKills": 0,
-    "mined": 8703,
+    "mined": 8713,
     "crafted": 3785,
-    "km": 57.3,
-    "jumps": 6375,
-    "dmg": 609,
-    "dmgTaken": 493,
+    "km": 61.02,
+    "jumps": 6796,
+    "dmg": 616,
+    "dmgTaken": 530,
     "fish": 0,
     "bred": 27,
     "trades": 0,
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T19:21:46+00:00"
+ "updated": "2026-10-25T19:49:36+00:00"
 }
