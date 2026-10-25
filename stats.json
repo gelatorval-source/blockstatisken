@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4490074,
+    "play": 4520074,
     "deaths": 6,
-    "mobKills": 6011,
+    "mobKills": 6013,
     "playerKills": 0,
-    "mined": 49900,
-    "crafted": 29437,
-    "km": 339.29,
-    "jumps": 33888,
-    "dmg": 13200,
-    "dmgTaken": 2213,
+    "mined": 50042,
+    "crafted": 29453,
+    "km": 346.34,
+    "jumps": 34253,
+    "dmg": 13221,
+    "dmgTaken": 2249,
     "fish": 35,
     "bred": 324,
     "trades": 506,
@@ -45,7 +45,7 @@
      ],
      [
       "oak_leaves",
-      1437
+      1441
      ],
      [
       "sugar_cane",
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2867575,
+    "play": 2897575,
     "deaths": 2,
-    "mobKills": 5597,
+    "mobKills": 6160,
     "playerKills": 0,
-    "mined": 46671,
+    "mined": 46684,
     "crafted": 17116,
-    "km": 197.67,
-    "jumps": 40925,
+    "km": 198.23,
+    "jumps": 41027,
     "dmg": 9911,
-    "dmgTaken": 2290,
+    "dmgTaken": 2296,
     "fish": 0,
     "bred": 55,
     "trades": 93,
@@ -151,7 +151,7 @@
      ],
      [
       "cobblestone",
-      934
+      944
      ],
      [
       "oak_log",
@@ -161,7 +161,7 @@
     "topKilled": [
      [
       "silverfish",
-      4652
+      5121
      ],
      [
       "zombie",
@@ -310,18 +310,18 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 799185,
+    "play": 823504,
     "deaths": 4,
-    "mobKills": 42,
+    "mobKills": 43,
     "playerKills": 0,
-    "mined": 7828,
-    "crafted": 3439,
-    "km": 47.33,
-    "jumps": 5566,
-    "dmg": 474,
-    "dmgTaken": 360,
+    "mined": 8231,
+    "crafted": 3772,
+    "km": 48.46,
+    "jumps": 5635,
+    "dmg": 495,
+    "dmgTaken": 361,
     "fish": 0,
-    "bred": 16,
+    "bred": 20,
     "trades": 0,
     "topMined": [
      [
@@ -330,11 +330,11 @@
      ],
      [
       "dirt",
-      1594
+      1758
      ],
      [
       "grass_block",
-      1196
+      1306
      ],
      [
       "sand",
@@ -346,15 +346,15 @@
      ],
      [
       "oak_log",
-      224
+      241
+     ],
+     [
+      "wheat",
+      160
      ],
      [
       "coal_ore",
       158
-     ],
-     [
-      "short_grass",
-      151
      ]
     ],
     "topKilled": [
@@ -387,8 +387,8 @@
       4
      ],
      [
-      "salmon",
-      1
+      "cow",
+      2
      ]
     ],
     "killedBy": [
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T17:31:26+00:00"
+ "updated": "2026-10-25T17:59:15+00:00"
 }
