@@ -5,19 +5,19 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4655541,
+    "play": 4675780,
     "deaths": 6,
     "mobKills": 6022,
     "playerKills": 0,
-    "mined": 50976,
-    "crafted": 29517,
-    "km": 362.2,
-    "jumps": 36392,
+    "mined": 50982,
+    "crafted": 29549,
+    "km": 363.6,
+    "jumps": 36505,
     "dmg": 13405,
-    "dmgTaken": 2299,
+    "dmgTaken": 2300,
     "fish": 35,
     "bred": 324,
-    "trades": 506,
+    "trades": 530,
     "topMined": [
      [
       "deepslate",
@@ -33,7 +33,7 @@
      ],
      [
       "grass_block",
-      5873
+      5874
      ],
      [
       "wheat",
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3033336,
+    "play": 3047527,
     "deaths": 2,
-    "mobKills": 6840,
+    "mobKills": 6841,
     "playerKills": 0,
-    "mined": 47116,
+    "mined": 47268,
     "crafted": 17256,
-    "km": 213.15,
-    "jumps": 44526,
+    "km": 213.92,
+    "jumps": 44623,
     "dmg": 10494,
-    "dmgTaken": 2413,
+    "dmgTaken": 2420,
     "fish": 0,
     "bred": 55,
     "trades": 141,
@@ -139,7 +139,7 @@
      ],
      [
       "dirt",
-      2782
+      2830
      ],
      [
       "basalt",
@@ -310,18 +310,18 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 959098,
+    "play": 979337,
     "deaths": 7,
-    "mobKills": 51,
+    "mobKills": 55,
     "playerKills": 0,
-    "mined": 8713,
-    "crafted": 3785,
-    "km": 61.02,
-    "jumps": 6796,
-    "dmg": 616,
-    "dmgTaken": 530,
+    "mined": 8746,
+    "crafted": 3793,
+    "km": 62.34,
+    "jumps": 6892,
+    "dmg": 666,
+    "dmgTaken": 534,
     "fish": 0,
-    "bred": 27,
+    "bred": 28,
     "trades": 0,
     "topMined": [
      [
@@ -350,7 +350,7 @@
      ],
      [
       "wheat",
-      171
+      199
      ],
      [
       "coal_ore",
@@ -363,15 +363,19 @@
       11
      ],
      [
+      "skeleton",
+      7
+     ],
+     [
       "zombified_piglin",
       6
      ],
      [
-      "skeleton",
+      "sheep",
       6
      ],
      [
-      "sheep",
+      "cow",
       6
      ],
      [
@@ -385,10 +389,6 @@
      [
       "chicken",
       4
-     ],
-     [
-      "cow",
-      3
      ]
     ],
     "killedBy": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T19:49:36+00:00"
+ "updated": "2026-10-25T20:06:07+00:00"
 }
