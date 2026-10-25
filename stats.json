@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4520074,
+    "play": 4550074,
     "deaths": 6,
     "mobKills": 6013,
     "playerKills": 0,
-    "mined": 50042,
-    "crafted": 29453,
-    "km": 346.34,
-    "jumps": 34253,
+    "mined": 50051,
+    "crafted": 29510,
+    "km": 350.07,
+    "jumps": 34590,
     "dmg": 13221,
-    "dmgTaken": 2249,
+    "dmgTaken": 2264,
     "fish": 35,
     "bred": 324,
     "trades": 506,
@@ -111,19 +111,19 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 2897575,
+    "play": 2927575,
     "deaths": 2,
-    "mobKills": 6160,
+    "mobKills": 6799,
     "playerKills": 0,
-    "mined": 46684,
-    "crafted": 17116,
-    "km": 198.23,
-    "jumps": 41027,
+    "mined": 46685,
+    "crafted": 17252,
+    "km": 201.48,
+    "jumps": 41716,
     "dmg": 9911,
-    "dmgTaken": 2296,
+    "dmgTaken": 2304,
     "fish": 0,
     "bred": 55,
-    "trades": 93,
+    "trades": 141,
     "topMined": [
      [
       "netherrack",
@@ -161,7 +161,7 @@
     "topKilled": [
      [
       "silverfish",
-      5121
+      5751
      ],
      [
       "zombie",
@@ -310,31 +310,31 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 823504,
+    "play": 853504,
     "deaths": 4,
-    "mobKills": 43,
+    "mobKills": 49,
     "playerKills": 0,
-    "mined": 8231,
-    "crafted": 3772,
-    "km": 48.46,
-    "jumps": 5635,
-    "dmg": 495,
-    "dmgTaken": 361,
+    "mined": 8690,
+    "crafted": 3777,
+    "km": 49.79,
+    "jumps": 5722,
+    "dmg": 565,
+    "dmgTaken": 368,
     "fish": 0,
-    "bred": 20,
+    "bred": 27,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      1939
+      2047
      ],
      [
       "dirt",
-      1758
+      1993
      ],
      [
       "grass_block",
-      1306
+      1386
      ],
      [
       "sand",
@@ -350,24 +350,24 @@
      ],
      [
       "wheat",
-      160
+      171
      ],
      [
       "coal_ore",
-      158
+      161
      ]
     ],
     "topKilled": [
+     [
+      "pig",
+      11
+     ],
      [
       "zombified_piglin",
       6
      ],
      [
       "sheep",
-      6
-     ],
-     [
-      "pig",
       6
      ],
      [
@@ -388,7 +388,7 @@
      ],
      [
       "cow",
-      2
+      3
      ]
     ],
     "killedBy": [
@@ -417,5 +417,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T17:59:15+00:00"
+ "updated": "2026-10-25T18:24:09+00:00"
 }
