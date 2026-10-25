@@ -5,19 +5,19 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4675780,
+    "play": 4699780,
     "deaths": 6,
-    "mobKills": 6022,
+    "mobKills": 6055,
     "playerKills": 0,
-    "mined": 50982,
-    "crafted": 29549,
-    "km": 363.6,
-    "jumps": 36505,
-    "dmg": 13405,
-    "dmgTaken": 2300,
+    "mined": 51007,
+    "crafted": 30379,
+    "km": 364.76,
+    "jumps": 36629,
+    "dmg": 13718,
+    "dmgTaken": 2302,
     "fish": 35,
-    "bred": 324,
-    "trades": 530,
+    "bred": 337,
+    "trades": 594,
     "topMined": [
      [
       "deepslate",
@@ -41,7 +41,7 @@
      ],
      [
       "dirt",
-      2063
+      2071
      ],
      [
       "oak_leaves",
@@ -74,16 +74,16 @@
       45
      ],
      [
+      "villager",
+      45
+     ],
+     [
       "creeper",
       39
      ],
      [
       "sheep",
       35
-     ],
-     [
-      "cave_spider",
-      20
      ]
     ],
     "killedBy": [
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3047527,
+    "play": 3061069,
     "deaths": 2,
-    "mobKills": 6841,
+    "mobKills": 6845,
     "playerKills": 0,
-    "mined": 47268,
-    "crafted": 17256,
-    "km": 213.92,
-    "jumps": 44623,
-    "dmg": 10494,
-    "dmgTaken": 2420,
+    "mined": 47270,
+    "crafted": 17363,
+    "km": 215.17,
+    "jumps": 44849,
+    "dmg": 10510,
+    "dmgTaken": 2425,
     "fish": 0,
     "bred": 55,
     "trades": 141,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      9381
+      9382
      ],
      [
       "deepslate",
@@ -181,11 +181,11 @@
      ],
      [
       "sheep",
-      69
+      72
      ],
      [
       "pig",
-      52
+      53
      ],
      [
       "chicken",
@@ -310,16 +310,16 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 979337,
+    "play": 989424,
     "deaths": 7,
     "mobKills": 55,
     "playerKills": 0,
-    "mined": 8746,
-    "crafted": 3793,
-    "km": 62.34,
-    "jumps": 6892,
+    "mined": 8755,
+    "crafted": 3794,
+    "km": 62.71,
+    "jumps": 6908,
     "dmg": 666,
-    "dmgTaken": 534,
+    "dmgTaken": 536,
     "fish": 0,
     "bred": 28,
     "trades": 0,
@@ -330,11 +330,11 @@
      ],
      [
       "dirt",
-      1997
+      2001
      ],
      [
       "grass_block",
-      1389
+      1394
      ],
      [
       "sand",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T20:06:07+00:00"
+ "updated": "2026-10-25T20:30:22+00:00"
 }
