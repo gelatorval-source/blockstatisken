@@ -111,19 +111,19 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3351703,
+    "play": 3380770,
     "deaths": 2,
-    "mobKills": 6852,
+    "mobKills": 6876,
     "playerKills": 0,
-    "mined": 61694,
-    "crafted": 18045,
-    "km": 225.93,
-    "jumps": 46544,
-    "dmg": 10605,
-    "dmgTaken": 2480,
+    "mined": 61702,
+    "crafted": 18046,
+    "km": 228.24,
+    "jumps": 47108,
+    "dmg": 10811,
+    "dmgTaken": 2497,
     "fish": 0,
     "bred": 55,
-    "trades": 141,
+    "trades": 142,
     "topMined": [
      [
       "netherrack",
@@ -169,15 +169,15 @@
      ],
      [
       "skeleton",
-      99
+      100
      ],
      [
       "cow",
-      93
+      98
      ],
      [
       "spider",
-      87
+      89
      ],
      [
       "sheep",
@@ -189,7 +189,7 @@
      ],
      [
       "chicken",
-      42
+      44
      ]
     ],
     "killedBy": [],
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-26T22:15:43+00:00"
+ "updated": "2026-10-26T22:50:37+00:00"
 }
