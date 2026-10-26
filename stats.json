@@ -111,27 +111,27 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3233252,
+    "play": 3273703,
     "deaths": 2,
-    "mobKills": 6848,
+    "mobKills": 6851,
     "playerKills": 0,
-    "mined": 47336,
-    "crafted": 17910,
-    "km": 217.09,
-    "jumps": 45124,
-    "dmg": 10530,
-    "dmgTaken": 2430,
+    "mined": 57890,
+    "crafted": 18045,
+    "km": 223.0,
+    "jumps": 45983,
+    "dmg": 10582,
+    "dmgTaken": 2472,
     "fish": 0,
     "bred": 55,
     "trades": 141,
     "topMined": [
      [
       "netherrack",
-      9526
+      18832
      ],
      [
       "stone",
-      9386
+      9422
      ],
      [
       "deepslate",
@@ -139,23 +139,23 @@
      ],
      [
       "dirt",
-      2830
+      2938
      ],
      [
       "basalt",
-      2199
+      2270
      ],
      [
       "spruce_log",
       1788
      ],
      [
-      "cobblestone",
-      945
+      "gravel",
+      1508
      ],
      [
-      "oak_log",
-      906
+      "cobblestone",
+      945
      ]
     ],
     "topKilled": [
@@ -200,7 +200,7 @@
      "elder": 0,
      "diamonds": 177,
      "emeralds": 0,
-     "debris": 18
+     "debris": 31
     }
    }
   },
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-26T20:37:26+00:00"
+ "updated": "2026-10-26T21:10:21+00:00"
 }
