@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3309703,
+    "play": 3351703,
     "deaths": 2,
     "mobKills": 6852,
     "playerKills": 0,
     "mined": 61694,
     "crafted": 18045,
-    "km": 225.28,
-    "jumps": 46442,
+    "km": 225.93,
+    "jumps": 46544,
     "dmg": 10605,
-    "dmgTaken": 2475,
+    "dmgTaken": 2480,
     "fish": 0,
     "bred": 55,
     "trades": 141,
@@ -208,23 +208,23 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2136349,
+    "play": 2160096,
     "deaths": 1,
-    "mobKills": 2724,
+    "mobKills": 2727,
     "playerKills": 0,
-    "mined": 16498,
+    "mined": 16506,
     "crafted": 6005,
-    "km": 156.63,
-    "jumps": 15425,
-    "dmg": 5348,
-    "dmgTaken": 363,
+    "km": 160.25,
+    "jumps": 15709,
+    "dmg": 5392,
+    "dmgTaken": 387,
     "fish": 0,
     "bred": 0,
     "trades": 93,
     "topMined": [
      [
       "grass_block",
-      2327
+      2331
      ],
      [
       "wheat",
@@ -277,16 +277,16 @@
       13
      ],
      [
+      "pillager",
+      12
+     ],
+     [
       "sheep",
       11
      ],
      [
       "drowned",
       11
-     ],
-     [
-      "cow",
-      10
      ]
     ],
     "killedBy": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-26T21:40:48+00:00"
+ "updated": "2026-10-26T22:15:43+00:00"
 }
