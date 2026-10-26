@@ -111,14 +111,14 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3061069,
+    "play": 3077183,
     "deaths": 2,
     "mobKills": 6845,
     "playerKills": 0,
     "mined": 47270,
     "crafted": 17363,
-    "km": 215.17,
-    "jumps": 44849,
+    "km": 215.18,
+    "jumps": 44851,
     "dmg": 10510,
     "dmgTaken": 2425,
     "fish": 0,
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-25T23:43:31+00:00"
+ "updated": "2026-10-26T17:21:35+00:00"
 }
