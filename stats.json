@@ -111,23 +111,23 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3273703,
+    "play": 3309703,
     "deaths": 2,
-    "mobKills": 6851,
+    "mobKills": 6852,
     "playerKills": 0,
-    "mined": 57890,
+    "mined": 61694,
     "crafted": 18045,
-    "km": 223.0,
-    "jumps": 45983,
-    "dmg": 10582,
-    "dmgTaken": 2472,
+    "km": 225.28,
+    "jumps": 46442,
+    "dmg": 10605,
+    "dmgTaken": 2475,
     "fish": 0,
     "bred": 55,
     "trades": 141,
     "topMined": [
      [
       "netherrack",
-      18832
+      22536
      ],
      [
       "stone",
@@ -200,7 +200,7 @@
      "elder": 0,
      "diamonds": 177,
      "emeralds": 0,
-     "debris": 31
+     "debris": 33
     }
    }
   },
@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2134853,
+    "play": 2136349,
     "deaths": 1,
     "mobKills": 2724,
     "playerKills": 0,
-    "mined": 16497,
+    "mined": 16498,
     "crafted": 6005,
-    "km": 156.29,
-    "jumps": 15371,
+    "km": 156.63,
+    "jumps": 15425,
     "dmg": 5348,
-    "dmgTaken": 362,
+    "dmgTaken": 363,
     "fish": 0,
     "bred": 0,
     "trades": 93,
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-26T21:10:21+00:00"
+ "updated": "2026-10-26T21:40:48+00:00"
 }
