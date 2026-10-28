@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4948440,
-    "deaths": 6,
-    "mobKills": 6965,
+    "play": 5002440,
+    "deaths": 7,
+    "mobKills": 6977,
     "playerKills": 0,
-    "mined": 52125,
+    "mined": 52152,
     "crafted": 31838,
-    "km": 379.03,
-    "jumps": 38291,
-    "dmg": 14236,
-    "dmgTaken": 2392,
+    "km": 381.01,
+    "jumps": 38624,
+    "dmg": 14500,
+    "dmgTaken": 2547,
     "fish": 35,
     "bred": 337,
     "trades": 670,
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3487397,
+    "play": 3541397,
     "deaths": 2,
-    "mobKills": 6932,
+    "mobKills": 6969,
     "playerKills": 0,
-    "mined": 62200,
-    "crafted": 18863,
-    "km": 234.89,
-    "jumps": 48180,
-    "dmg": 11694,
-    "dmgTaken": 2588,
+    "mined": 62226,
+    "crafted": 18923,
+    "km": 239.03,
+    "jumps": 48805,
+    "dmg": 12068,
+    "dmgTaken": 2607,
     "fish": 0,
     "bred": 57,
     "trades": 142,
@@ -155,7 +155,7 @@
      ],
      [
       "cobblestone",
-      978
+      980
      ]
     ],
     "topKilled": [
@@ -180,16 +180,16 @@
       89
      ],
      [
+      "enderman",
+      77
+     ],
+     [
       "sheep",
       72
      ],
      [
       "pig",
       53
-     ],
-     [
-      "enderman",
-      52
      ]
     ],
     "killedBy": [],
@@ -208,31 +208,31 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2225437,
+    "play": 2278894,
     "deaths": 1,
     "mobKills": 2727,
     "playerKills": 0,
-    "mined": 18207,
-    "crafted": 6005,
-    "km": 165.05,
-    "jumps": 16041,
+    "mined": 18513,
+    "crafted": 7134,
+    "km": 169.09,
+    "jumps": 16237,
     "dmg": 5392,
-    "dmgTaken": 389,
+    "dmgTaken": 390,
     "fish": 0,
     "bred": 0,
-    "trades": 93,
+    "trades": 97,
     "topMined": [
      [
       "grass_block",
-      2349
+      2350
+     ],
+     [
+      "deepslate",
+      2062
      ],
      [
       "wheat",
       2033
-     ],
-     [
-      "deepslate",
-      2020
      ],
      [
       "stone",
@@ -244,15 +244,15 @@
      ],
      [
       "sugar_cane",
-      1337
+      1374
      ],
      [
       "netherrack",
       1127
      ],
      [
-      "oak_log",
-      753
+      "oak_leaves",
+      779
      ]
     ],
     "topKilled": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T18:50:03+00:00"
+ "updated": "2026-10-28T19:32:35+00:00"
 }
