@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3643397,
+    "play": 3685397,
     "deaths": 2,
     "mobKills": 6975,
     "playerKills": 0,
     "mined": 62525,
     "crafted": 19392,
-    "km": 258.46,
-    "jumps": 49823,
+    "km": 258.48,
+    "jumps": 49834,
     "dmg": 12238,
-    "dmgTaken": 2688,
+    "dmgTaken": 2691,
     "fish": 0,
     "bred": 63,
     "trades": 270,
@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2377640,
+    "play": 2410562,
     "deaths": 1,
-    "mobKills": 2734,
+    "mobKills": 2740,
     "playerKills": 0,
-    "mined": 18885,
-    "crafted": 7290,
-    "km": 176.89,
-    "jumps": 16864,
-    "dmg": 5525,
-    "dmgTaken": 391,
+    "mined": 19042,
+    "crafted": 7339,
+    "km": 180.21,
+    "jumps": 17125,
+    "dmg": 5646,
+    "dmgTaken": 395,
     "fish": 0,
     "bred": 0,
     "trades": 97,
@@ -232,11 +232,11 @@
      ],
      [
       "wheat",
-      2033
+      2052
      ],
      [
       "dirt",
-      1750
+      1774
      ],
      [
       "stone",
@@ -251,8 +251,8 @@
       1127
      ],
      [
-      "oak_log",
-      794
+      "oak_leaves",
+      821
      ]
     ],
     "topKilled": [
@@ -262,11 +262,11 @@
      ],
      [
       "zombie",
-      131
+      136
      ],
      [
       "skeleton",
-      65
+      66
      ],
      [
       "spider",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T20:59:45+00:00"
+ "updated": "2026-10-28T21:34:06+00:00"
 }
