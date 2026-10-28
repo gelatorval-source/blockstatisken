@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4840440,
+    "play": 4894440,
     "deaths": 6,
     "mobKills": 6961,
     "playerKills": 0,
-    "mined": 51260,
-    "crafted": 31804,
-    "km": 374.6,
-    "jumps": 37609,
-    "dmg": 14096,
-    "dmgTaken": 2316,
+    "mined": 51286,
+    "crafted": 31836,
+    "km": 376.37,
+    "jumps": 37971,
+    "dmg": 14098,
+    "dmgTaken": 2330,
     "fish": 35,
     "bred": 337,
     "trades": 670,
@@ -49,7 +49,7 @@
      ],
      [
       "sugar_cane",
-      1292
+      1293
      ]
     ],
     "topKilled": [
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3380770,
+    "play": 3433397,
     "deaths": 2,
     "mobKills": 6876,
     "playerKills": 0,
-    "mined": 61702,
-    "crafted": 18046,
-    "km": 228.24,
-    "jumps": 47108,
+    "mined": 62062,
+    "crafted": 18836,
+    "km": 231.27,
+    "jumps": 47439,
     "dmg": 10811,
-    "dmgTaken": 2497,
+    "dmgTaken": 2499,
     "fish": 0,
     "bred": 55,
     "trades": 142,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      9422
+      9624
      ],
      [
       "deepslate",
@@ -139,7 +139,7 @@
      ],
      [
       "dirt",
-      2938
+      2947
      ],
      [
       "basalt",
@@ -147,15 +147,15 @@
      ],
      [
       "spruce_log",
-      1788
+      1793
      ],
      [
       "gravel",
-      1508
+      1519
      ],
      [
       "cobblestone",
-      945
+      975
      ]
     ],
     "topKilled": [
@@ -208,14 +208,14 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2160096,
+    "play": 2171437,
     "deaths": 1,
     "mobKills": 2727,
     "playerKills": 0,
-    "mined": 16506,
+    "mined": 16703,
     "crafted": 6005,
-    "km": 160.25,
-    "jumps": 15709,
+    "km": 161.1,
+    "jumps": 15770,
     "dmg": 5392,
     "dmgTaken": 387,
     "fish": 0,
@@ -228,19 +228,19 @@
      ],
      [
       "wheat",
-      1874
+      2033
      ],
      [
       "deepslate",
       1637
      ],
      [
-      "stone",
-      1310
+      "sugar_cane",
+      1337
      ],
      [
-      "sugar_cane",
-      1299
+      "stone",
+      1310
      ],
      [
       "dirt",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T17:18:45+00:00"
+ "updated": "2026-10-28T18:01:55+00:00"
 }
