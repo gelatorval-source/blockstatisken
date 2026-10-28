@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5056440,
+    "play": 5070358,
     "deaths": 7,
-    "mobKills": 6989,
+    "mobKills": 7020,
     "playerKills": 0,
-    "mined": 52317,
-    "crafted": 31862,
-    "km": 394.07,
-    "jumps": 39194,
-    "dmg": 14796,
-    "dmgTaken": 2594,
+    "mined": 52321,
+    "crafted": 31954,
+    "km": 398.12,
+    "jumps": 39450,
+    "dmg": 15245,
+    "dmgTaken": 2618,
     "fish": 38,
     "bred": 388,
     "trades": 680,
@@ -59,15 +59,15 @@
      ],
      [
       "zombie",
-      201
+      209
      ],
      [
       "skeleton",
-      140
+      144
      ],
      [
       "spider",
-      83
+      88
      ],
      [
       "villager",
@@ -83,7 +83,7 @@
      ],
      [
       "creeper",
-      39
+      43
      ]
     ],
     "killedBy": [
@@ -111,19 +111,19 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3595397,
+    "play": 3643397,
     "deaths": 2,
-    "mobKills": 6971,
+    "mobKills": 6975,
     "playerKills": 0,
-    "mined": 62493,
-    "crafted": 19339,
-    "km": 248.79,
-    "jumps": 49600,
-    "dmg": 12158,
-    "dmgTaken": 2673,
+    "mined": 62525,
+    "crafted": 19392,
+    "km": 258.46,
+    "jumps": 49823,
+    "dmg": 12238,
+    "dmgTaken": 2688,
     "fish": 0,
-    "bred": 60,
-    "trades": 217,
+    "bred": 63,
+    "trades": 270,
     "topMined": [
      [
       "netherrack",
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      9628
+      9651
      ],
      [
       "deepslate",
@@ -155,7 +155,7 @@
      ],
      [
       "cobblestone",
-      983
+      985
      ]
     ],
     "topKilled": [
@@ -169,7 +169,7 @@
      ],
      [
       "skeleton",
-      100
+      101
      ],
      [
       "cow",
@@ -208,14 +208,14 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2329640,
+    "play": 2377640,
     "deaths": 1,
     "mobKills": 2734,
     "playerKills": 0,
-    "mined": 18620,
-    "crafted": 7134,
-    "km": 172.69,
-    "jumps": 16643,
+    "mined": 18885,
+    "crafted": 7290,
+    "km": 176.89,
+    "jumps": 16864,
     "dmg": 5525,
     "dmgTaken": 391,
     "fish": 0,
@@ -224,7 +224,7 @@
     "topMined": [
      [
       "grass_block",
-      2353
+      2375
      ],
      [
       "deepslate",
@@ -235,12 +235,12 @@
       2033
      ],
      [
-      "stone",
-      1694
+      "dirt",
+      1750
      ],
      [
-      "dirt",
-      1639
+      "stone",
+      1730
      ],
      [
       "sugar_cane",
@@ -251,8 +251,8 @@
       1127
      ],
      [
-      "oak_leaves",
-      779
+      "oak_log",
+      794
      ]
     ],
     "topKilled": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T20:17:34+00:00"
+ "updated": "2026-10-28T20:59:45+00:00"
 }
