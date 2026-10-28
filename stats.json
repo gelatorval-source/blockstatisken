@@ -111,7 +111,7 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3685397,
+    "play": 3712348,
     "deaths": 2,
     "mobKills": 6975,
     "playerKills": 0,
@@ -208,19 +208,19 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2410562,
+    "play": 2423988,
     "deaths": 1,
-    "mobKills": 2740,
+    "mobKills": 2753,
     "playerKills": 0,
-    "mined": 19042,
-    "crafted": 7339,
-    "km": 180.21,
-    "jumps": 17125,
-    "dmg": 5646,
-    "dmgTaken": 395,
+    "mined": 19061,
+    "crafted": 7800,
+    "km": 183.13,
+    "jumps": 17246,
+    "dmg": 5854,
+    "dmgTaken": 402,
     "fish": 0,
     "bred": 0,
-    "trades": 97,
+    "trades": 135,
     "topMined": [
      [
       "grass_block",
@@ -240,7 +240,7 @@
      ],
      [
       "stone",
-      1730
+      1749
      ],
      [
       "sugar_cane",
@@ -262,19 +262,19 @@
      ],
      [
       "zombie",
-      136
+      139
      ],
      [
       "skeleton",
-      66
+      69
      ],
      [
       "spider",
-      24
+      30
      ],
      [
       "creeper",
-      14
+      15
      ],
      [
       "pillager",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T21:34:06+00:00"
+ "updated": "2026-10-28T22:15:42+00:00"
 }
