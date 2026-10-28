@@ -5,15 +5,15 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4774440,
+    "play": 4780440,
     "deaths": 6,
-    "mobKills": 6704,
+    "mobKills": 6802,
     "playerKills": 0,
-    "mined": 51076,
+    "mined": 51089,
     "crafted": 31090,
-    "km": 369.32,
-    "jumps": 37050,
-    "dmg": 13816,
+    "km": 369.82,
+    "jumps": 37112,
+    "dmg": 13860,
     "dmgTaken": 2303,
     "fish": 35,
     "bred": 337,
@@ -78,12 +78,12 @@
       45
      ],
      [
-      "creeper",
-      39
+      "chicken",
+      43
      ],
      [
-      "sheep",
-      35
+      "creeper",
+      39
      ]
     ],
     "killedBy": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T12:58:38+00:00"
+ "updated": "2026-10-28T16:27:20+00:00"
 }
