@@ -5,19 +5,19 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 4780440,
+    "play": 4840440,
     "deaths": 6,
-    "mobKills": 6802,
+    "mobKills": 6961,
     "playerKills": 0,
-    "mined": 51089,
-    "crafted": 31090,
-    "km": 369.82,
-    "jumps": 37112,
-    "dmg": 13860,
-    "dmgTaken": 2303,
+    "mined": 51260,
+    "crafted": 31804,
+    "km": 374.6,
+    "jumps": 37609,
+    "dmg": 14096,
+    "dmgTaken": 2316,
     "fish": 35,
     "bred": 337,
-    "trades": 669,
+    "trades": 670,
     "topMined": [
      [
       "deepslate",
@@ -49,13 +49,13 @@
      ],
      [
       "sugar_cane",
-      1182
+      1292
      ]
     ],
     "topKilled": [
      [
       "silverfish",
-      5694
+      5840
      ],
      [
       "zombie",
@@ -71,11 +71,11 @@
      ],
      [
       "villager",
-      50
+      57
      ],
      [
       "cow",
-      45
+      48
      ],
      [
       "chicken",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T16:27:20+00:00"
+ "updated": "2026-10-28T17:18:45+00:00"
 }
