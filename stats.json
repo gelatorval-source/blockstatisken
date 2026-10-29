@@ -111,19 +111,19 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 3712348,
+    "play": 3790348,
     "deaths": 2,
     "mobKills": 6975,
     "playerKills": 0,
-    "mined": 62525,
-    "crafted": 19392,
-    "km": 258.48,
-    "jumps": 49834,
+    "mined": 62531,
+    "crafted": 19614,
+    "km": 260.14,
+    "jumps": 49883,
     "dmg": 12238,
-    "dmgTaken": 2691,
+    "dmgTaken": 2696,
     "fish": 0,
     "bred": 63,
-    "trades": 270,
+    "trades": 342,
     "topMined": [
      [
       "netherrack",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-28T22:15:42+00:00"
+ "updated": "2026-10-29T19:17:42+00:00"
 }
