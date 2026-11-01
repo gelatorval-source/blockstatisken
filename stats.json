@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 4119747,
+    "play": 4137207,
     "deaths": 2,
-    "mobKills": 6981,
+    "mobKills": 7003,
     "playerKills": 0,
-    "mined": 64105,
-    "crafted": 19819,
-    "km": 268.6,
-    "jumps": 50502,
-    "dmg": 12342,
-    "dmgTaken": 2734,
+    "mined": 64892,
+    "crafted": 19835,
+    "km": 271.45,
+    "jumps": 50863,
+    "dmg": 12616,
+    "dmgTaken": 2763,
     "fish": 0,
     "bred": 63,
     "trades": 394,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      10261
+      10824
      ],
      [
       "deepslate",
@@ -139,7 +139,7 @@
      ],
      [
       "dirt",
-      3519
+      3555
      ],
      [
       "basalt",
@@ -155,7 +155,7 @@
      ],
      [
       "grass_block",
-      1117
+      1195
      ]
     ],
     "topKilled": [
@@ -165,11 +165,11 @@
      ],
      [
       "zombie",
-      118
+      125
      ],
      [
       "skeleton",
-      101
+      103
      ],
      [
       "cow",
@@ -177,7 +177,7 @@
      ],
      [
       "spider",
-      91
+      94
      ],
      [
       "enderman",
@@ -310,31 +310,31 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 1020191,
+    "play": 1037616,
     "deaths": 7,
-    "mobKills": 56,
+    "mobKills": 67,
     "playerKills": 0,
-    "mined": 9168,
-    "crafted": 3795,
-    "km": 64.91,
-    "jumps": 7018,
-    "dmg": 690,
-    "dmgTaken": 547,
+    "mined": 9352,
+    "crafted": 3798,
+    "km": 66.74,
+    "jumps": 7131,
+    "dmg": 789,
+    "dmgTaken": 588,
     "fish": 0,
     "bred": 35,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      2246
+      2337
      ],
      [
       "dirt",
-      2081
+      2115
      ],
      [
       "grass_block",
-      1427
+      1457
      ],
      [
       "sand",
@@ -359,11 +359,19 @@
     ],
     "topKilled": [
      [
+      "zombie",
+      11
+     ],
+     [
       "pig",
       11
      ],
      [
       "skeleton",
+      9
+     ],
+     [
+      "spider",
       7
      ],
      [
@@ -379,16 +387,8 @@
       6
      ],
      [
-      "spider",
-      6
-     ],
-     [
-      "zombie",
-      5
-     ],
-     [
       "chicken",
-      4
+      5
      ]
     ],
     "killedBy": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-01T20:59:57+00:00"
+ "updated": "2026-11-01T21:31:40+00:00"
 }
