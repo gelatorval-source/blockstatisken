@@ -111,27 +111,27 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 4083878,
+    "play": 4119747,
     "deaths": 2,
-    "mobKills": 6975,
+    "mobKills": 6981,
     "playerKills": 0,
-    "mined": 62544,
-    "crafted": 19614,
-    "km": 262.19,
-    "jumps": 49941,
-    "dmg": 12238,
-    "dmgTaken": 2712,
+    "mined": 64105,
+    "crafted": 19819,
+    "km": 268.6,
+    "jumps": 50502,
+    "dmg": 12342,
+    "dmgTaken": 2734,
     "fish": 0,
     "bred": 63,
-    "trades": 342,
+    "trades": 394,
     "topMined": [
      [
       "netherrack",
-      22536
+      22539
      ],
      [
       "stone",
-      9651
+      10261
      ],
      [
       "deepslate",
@@ -139,7 +139,7 @@
      ],
      [
       "dirt",
-      2960
+      3519
      ],
      [
       "basalt",
@@ -151,11 +151,11 @@
      ],
      [
       "gravel",
-      1519
+      1521
      ],
      [
-      "cobblestone",
-      985
+      "grass_block",
+      1117
      ]
     ],
     "topKilled": [
@@ -177,7 +177,7 @@
      ],
      [
       "spider",
-      89
+      91
      ],
      [
       "enderman",
@@ -310,31 +310,31 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 989424,
+    "play": 1020191,
     "deaths": 7,
-    "mobKills": 55,
+    "mobKills": 56,
     "playerKills": 0,
-    "mined": 8755,
-    "crafted": 3794,
-    "km": 62.71,
-    "jumps": 6908,
-    "dmg": 666,
-    "dmgTaken": 536,
+    "mined": 9168,
+    "crafted": 3795,
+    "km": 64.91,
+    "jumps": 7018,
+    "dmg": 690,
+    "dmgTaken": 547,
     "fish": 0,
-    "bred": 28,
+    "bred": 35,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      2047
+      2246
      ],
      [
       "dirt",
-      2001
+      2081
      ],
      [
       "grass_block",
-      1394
+      1427
      ],
      [
       "sand",
@@ -346,15 +346,15 @@
      ],
      [
       "oak_log",
-      241
+      251
      ],
      [
       "wheat",
       199
      ],
      [
-      "coal_ore",
-      161
+      "carrots",
+      195
      ]
     ],
     "topKilled": [
@@ -379,11 +379,11 @@
       6
      ],
      [
-      "zombie",
-      5
+      "spider",
+      6
      ],
      [
-      "spider",
+      "zombie",
       5
      ],
      [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-10-30T15:19:01+00:00"
+ "updated": "2026-11-01T20:59:57+00:00"
 }
