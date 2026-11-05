@@ -5,14 +5,14 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5135311,
+    "play": 5137022,
     "deaths": 7,
     "mobKills": 7100,
     "playerKills": 0,
     "mined": 52489,
     "crafted": 32026,
-    "km": 413.74,
-    "jumps": 40134,
+    "km": 413.92,
+    "jumps": 40168,
     "dmg": 16318,
     "dmgTaken": 2788,
     "fish": 38,
@@ -208,23 +208,23 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2508117,
+    "play": 2538117,
     "deaths": 1,
     "mobKills": 2774,
     "playerKills": 0,
-    "mined": 19148,
-    "crafted": 7800,
-    "km": 195.62,
-    "jumps": 17609,
+    "mined": 19351,
+    "crafted": 8010,
+    "km": 201.0,
+    "jumps": 17688,
     "dmg": 6314,
-    "dmgTaken": 444,
+    "dmgTaken": 447,
     "fish": 0,
     "bred": 0,
     "trades": 135,
     "topMined": [
      [
       "grass_block",
-      2375
+      2378
      ],
      [
       "deepslate",
@@ -252,7 +252,7 @@
      ],
      [
       "oak_leaves",
-      821
+      829
      ]
     ],
     "topKilled": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T12:34:29+00:00"
+ "updated": "2026-11-05T13:51:08+00:00"
 }
