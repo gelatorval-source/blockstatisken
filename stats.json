@@ -5,23 +5,23 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5198157,
+    "play": 5252157,
     "deaths": 8,
-    "mobKills": 7119,
+    "mobKills": 7124,
     "playerKills": 0,
-    "mined": 56995,
-    "crafted": 32038,
-    "km": 421.69,
-    "jumps": 40614,
-    "dmg": 16953,
-    "dmgTaken": 2878,
+    "mined": 61409,
+    "crafted": 32160,
+    "km": 427.22,
+    "jumps": 41440,
+    "dmg": 17061,
+    "dmgTaken": 2920,
     "fish": 38,
     "bred": 388,
     "trades": 680,
     "topMined": [
      [
       "netherrack",
-      10699
+      14883
      ],
      [
       "deepslate",
@@ -33,7 +33,7 @@
      ],
      [
       "grass_block",
-      5877
+      5878
      ],
      [
       "wheat",
@@ -63,7 +63,7 @@
      ],
      [
       "skeleton",
-      147
+      150
      ],
      [
       "villager",
@@ -103,7 +103,7 @@
      "elder": 0,
      "diamonds": 355,
      "emeralds": 1,
-     "debris": 89
+     "debris": 92
     }
    }
   },
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 4300471,
+    "play": 4336008,
     "deaths": 2,
-    "mobKills": 7014,
+    "mobKills": 7081,
     "playerKills": 0,
-    "mined": 64906,
-    "crafted": 19935,
-    "km": 276.81,
-    "jumps": 51080,
-    "dmg": 12783,
-    "dmgTaken": 2786,
+    "mined": 66599,
+    "crafted": 20178,
+    "km": 287.13,
+    "jumps": 51890,
+    "dmg": 13406,
+    "dmgTaken": 2832,
     "fish": 0,
     "bred": 63,
     "trades": 394,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      10828
+      10829
      ],
      [
       "deepslate",
@@ -139,11 +139,15 @@
      ],
      [
       "dirt",
-      3555
+      4591
      ],
      [
       "basalt",
       2270
+     ],
+     [
+      "grass_block",
+      1809
      ],
      [
       "spruce_log",
@@ -151,11 +155,7 @@
      ],
      [
       "gravel",
-      1521
-     ],
-     [
-      "grass_block",
-      1195
+      1523
      ]
     ],
     "topKilled": [
@@ -165,31 +165,31 @@
      ],
      [
       "zombie",
-      131
+      133
      ],
      [
       "skeleton",
-      103
+      104
      ],
      [
       "cow",
-      98
+      101
      ],
      [
       "spider",
-      94
+      97
+     ],
+     [
+      "sheep",
+      96
      ],
      [
       "enderman",
       78
      ],
      [
-      "sheep",
-      72
-     ],
-     [
       "pig",
-      53
+      61
      ]
     ],
     "killedBy": [],
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T16:50:24+00:00"
+ "updated": "2026-11-05T17:42:47+00:00"
 }
