@@ -5,19 +5,19 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5252157,
+    "play": 5266594,
     "deaths": 8,
-    "mobKills": 7124,
+    "mobKills": 7125,
     "playerKills": 0,
-    "mined": 61409,
-    "crafted": 32160,
-    "km": 427.22,
-    "jumps": 41440,
-    "dmg": 17061,
-    "dmgTaken": 2920,
+    "mined": 61413,
+    "crafted": 32179,
+    "km": 428.3,
+    "jumps": 41552,
+    "dmg": 17080,
+    "dmgTaken": 2924,
     "fish": 38,
     "bred": 388,
-    "trades": 680,
+    "trades": 683,
     "topMined": [
      [
       "netherrack",
@@ -67,7 +67,7 @@
      ],
      [
       "villager",
-      89
+      90
      ],
      [
       "spider",
@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 4336008,
+    "play": 4348847,
     "deaths": 2,
-    "mobKills": 7081,
+    "mobKills": 7092,
     "playerKills": 0,
-    "mined": 66599,
+    "mined": 67411,
     "crafted": 20178,
-    "km": 287.13,
-    "jumps": 51890,
-    "dmg": 13406,
-    "dmgTaken": 2832,
+    "km": 289.06,
+    "jumps": 52173,
+    "dmg": 13456,
+    "dmgTaken": 2851,
     "fish": 0,
     "bred": 63,
     "trades": 394,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      10829
+      10833
      ],
      [
       "deepslate",
@@ -139,7 +139,7 @@
      ],
      [
       "dirt",
-      4591
+      5066
      ],
      [
       "basalt",
@@ -147,7 +147,7 @@
      ],
      [
       "grass_block",
-      1809
+      2127
      ],
      [
       "spruce_log",
@@ -165,11 +165,11 @@
      ],
      [
       "zombie",
-      133
+      134
      ],
      [
       "skeleton",
-      104
+      106
      ],
      [
       "cow",
@@ -177,7 +177,7 @@
      ],
      [
       "spider",
-      97
+      98
      ],
      [
       "sheep",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T17:42:47+00:00"
+ "updated": "2026-11-05T18:29:43+00:00"
 }
