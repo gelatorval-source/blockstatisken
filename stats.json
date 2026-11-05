@@ -5,23 +5,23 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5075311,
+    "play": 5135311,
     "deaths": 7,
-    "mobKills": 7051,
+    "mobKills": 7100,
     "playerKills": 0,
-    "mined": 52321,
-    "crafted": 31954,
-    "km": 399.22,
-    "jumps": 39473,
-    "dmg": 15416,
-    "dmgTaken": 2619,
+    "mined": 52489,
+    "crafted": 32026,
+    "km": 413.74,
+    "jumps": 40134,
+    "dmg": 16318,
+    "dmgTaken": 2788,
     "fish": 38,
     "bred": 388,
     "trades": 680,
     "topMined": [
      [
       "deepslate",
-      7335
+      7374
      ],
      [
       "netherrack",
@@ -29,11 +29,11 @@
      ],
      [
       "stone",
-      6229
+      6286
      ],
      [
       "grass_block",
-      5876
+      5877
      ],
      [
       "wheat",
@@ -41,7 +41,7 @@
      ],
      [
       "dirt",
-      2078
+      2082
      ],
      [
       "oak_leaves",
@@ -59,11 +59,11 @@
      ],
      [
       "zombie",
-      209
+      215
      ],
      [
       "skeleton",
-      144
+      147
      ],
      [
       "villager",
@@ -71,7 +71,11 @@
      ],
      [
       "spider",
-      88
+      89
+     ],
+     [
+      "creeper",
+      50
      ],
      [
       "cow",
@@ -79,10 +83,6 @@
      ],
      [
       "chicken",
-      43
-     ],
-     [
-      "creeper",
       43
      ]
     ],
@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2487695,
+    "play": 2508117,
     "deaths": 1,
     "mobKills": 2774,
     "playerKills": 0,
-    "mined": 19147,
+    "mined": 19148,
     "crafted": 7800,
-    "km": 194.31,
-    "jumps": 17576,
+    "km": 195.62,
+    "jumps": 17609,
     "dmg": 6314,
-    "dmgTaken": 443,
+    "dmgTaken": 444,
     "fish": 0,
     "bred": 0,
     "trades": 135,
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T10:44:51+00:00"
+ "updated": "2026-11-05T12:34:29+00:00"
 }
