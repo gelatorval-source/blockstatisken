@@ -5,27 +5,27 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5166199,
-    "deaths": 7,
+    "play": 5198157,
+    "deaths": 8,
     "mobKills": 7119,
     "playerKills": 0,
-    "mined": 52534,
-    "crafted": 32037,
-    "km": 419.71,
-    "jumps": 40316,
+    "mined": 56995,
+    "crafted": 32038,
+    "km": 421.69,
+    "jumps": 40614,
     "dmg": 16953,
-    "dmgTaken": 2834,
+    "dmgTaken": 2878,
     "fish": 38,
     "bred": 388,
     "trades": 680,
     "topMined": [
      [
-      "deepslate",
-      7374
+      "netherrack",
+      10699
      ],
      [
-      "netherrack",
-      6461
+      "deepslate",
+      7374
      ],
      [
       "stone",
@@ -103,7 +103,7 @@
      "elder": 0,
      "diamonds": 355,
      "emeralds": 1,
-     "debris": 25
+     "debris": 89
     }
    }
   },
@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2610117,
+    "play": 2666096,
     "deaths": 1,
-    "mobKills": 2778,
+    "mobKills": 2787,
     "playerKills": 0,
-    "mined": 19377,
-    "crafted": 8566,
-    "km": 208.28,
-    "jumps": 18090,
-    "dmg": 6334,
-    "dmgTaken": 447,
+    "mined": 19748,
+    "crafted": 9872,
+    "km": 214.05,
+    "jumps": 18481,
+    "dmg": 6505,
+    "dmgTaken": 461,
     "fish": 0,
     "bred": 0,
     "trades": 135,
@@ -251,8 +251,8 @@
       1127
      ],
      [
-      "oak_leaves",
-      830
+      "oak_log",
+      1038
      ]
     ],
     "topKilled": [
@@ -266,19 +266,19 @@
      ],
      [
       "skeleton",
-      69
+      72
+     ],
+     [
+      "spider",
+      31
      ],
      [
       "pillager",
       30
      ],
      [
-      "spider",
-      30
-     ],
-     [
       "creeper",
-      15
+      17
      ],
      [
       "drowned",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T14:49:00+00:00"
+ "updated": "2026-11-05T15:41:57+00:00"
 }
