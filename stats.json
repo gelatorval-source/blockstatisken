@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5137022,
+    "play": 5166199,
     "deaths": 7,
-    "mobKills": 7100,
+    "mobKills": 7119,
     "playerKills": 0,
-    "mined": 52489,
-    "crafted": 32026,
-    "km": 413.92,
-    "jumps": 40168,
-    "dmg": 16318,
-    "dmgTaken": 2788,
+    "mined": 52534,
+    "crafted": 32037,
+    "km": 419.71,
+    "jumps": 40316,
+    "dmg": 16953,
+    "dmgTaken": 2834,
     "fish": 38,
     "bred": 388,
     "trades": 680,
@@ -208,15 +208,15 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2538117,
+    "play": 2610117,
     "deaths": 1,
-    "mobKills": 2774,
+    "mobKills": 2778,
     "playerKills": 0,
-    "mined": 19351,
-    "crafted": 8010,
-    "km": 201.0,
-    "jumps": 17688,
-    "dmg": 6314,
+    "mined": 19377,
+    "crafted": 8566,
+    "km": 208.28,
+    "jumps": 18090,
+    "dmg": 6334,
     "dmgTaken": 447,
     "fish": 0,
     "bred": 0,
@@ -224,7 +224,7 @@
     "topMined": [
      [
       "grass_block",
-      2378
+      2383
      ],
      [
       "deepslate",
@@ -252,7 +252,7 @@
      ],
      [
       "oak_leaves",
-      829
+      830
      ]
     ],
     "topKilled": [
@@ -269,12 +269,12 @@
       69
      ],
      [
-      "spider",
+      "pillager",
       30
      ],
      [
-      "pillager",
-      29
+      "spider",
+      30
      ],
      [
       "creeper",
@@ -282,7 +282,7 @@
      ],
      [
       "drowned",
-      13
+      14
      ],
      [
       "sheep",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T13:51:08+00:00"
+ "updated": "2026-11-05T14:49:00+00:00"
 }
