@@ -208,15 +208,15 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2666096,
+    "play": 2715894,
     "deaths": 1,
-    "mobKills": 2787,
+    "mobKills": 2788,
     "playerKills": 0,
-    "mined": 19748,
-    "crafted": 9872,
-    "km": 214.05,
-    "jumps": 18481,
-    "dmg": 6505,
+    "mined": 19791,
+    "crafted": 10146,
+    "km": 216.29,
+    "jumps": 18502,
+    "dmg": 6525,
     "dmgTaken": 461,
     "fish": 0,
     "bred": 0,
@@ -244,7 +244,7 @@
      ],
      [
       "sugar_cane",
-      1400
+      1439
      ],
      [
       "netherrack",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T15:41:57+00:00"
+ "updated": "2026-11-05T16:50:24+00:00"
 }
