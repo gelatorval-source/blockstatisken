@@ -5,16 +5,16 @@
    "id": "ef41a0ec-4109-471a-89a6-dec3f2a42bbd",
    "name": "326Siyar",
    "s": {
-    "play": 5070358,
+    "play": 5075311,
     "deaths": 7,
-    "mobKills": 7020,
+    "mobKills": 7051,
     "playerKills": 0,
     "mined": 52321,
     "crafted": 31954,
-    "km": 398.12,
-    "jumps": 39450,
-    "dmg": 15245,
-    "dmgTaken": 2618,
+    "km": 399.22,
+    "jumps": 39473,
+    "dmg": 15416,
+    "dmgTaken": 2619,
     "fish": 38,
     "bred": 388,
     "trades": 680,
@@ -66,12 +66,12 @@
       144
      ],
      [
-      "spider",
-      88
+      "villager",
+      89
      ],
      [
-      "villager",
-      58
+      "spider",
+      88
      ],
      [
       "cow",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T00:40:28+00:00"
+ "updated": "2026-11-05T10:44:51+00:00"
 }
