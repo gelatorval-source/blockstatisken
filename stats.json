@@ -310,31 +310,31 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 1038175,
+    "play": 1056890,
     "deaths": 7,
-    "mobKills": 67,
+    "mobKills": 70,
     "playerKills": 0,
-    "mined": 9352,
-    "crafted": 3798,
-    "km": 66.77,
-    "jumps": 7131,
-    "dmg": 789,
+    "mined": 9635,
+    "crafted": 3852,
+    "km": 67.85,
+    "jumps": 7169,
+    "dmg": 810,
     "dmgTaken": 588,
     "fish": 0,
-    "bred": 35,
+    "bred": 43,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      2337
+      2375
      ],
      [
       "dirt",
-      2115
+      2163
      ],
      [
       "grass_block",
-      1457
+      1499
      ],
      [
       "sand",
@@ -346,24 +346,24 @@
      ],
      [
       "oak_log",
-      251
+      255
      ],
      [
       "wheat",
-      199
+      240
      ],
      [
       "carrots",
-      195
+      236
      ]
     ],
     "topKilled": [
      [
-      "zombie",
-      11
+      "pig",
+      13
      ],
      [
-      "pig",
+      "zombie",
       11
      ],
      [
@@ -379,16 +379,16 @@
       6
      ],
      [
+      "chicken",
+      6
+     ],
+     [
       "sheep",
       6
      ],
      [
       "cow",
       6
-     ],
-     [
-      "chicken",
-      5
      ]
     ],
     "killedBy": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-06T20:23:28+00:00"
+ "updated": "2026-11-06T21:45:12+00:00"
 }
