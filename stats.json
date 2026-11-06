@@ -111,16 +111,16 @@
    "id": "c6589245-7a6e-4922-9ffb-d31d1381d36f",
    "name": "Huccil",
    "s": {
-    "play": 4348847,
+    "play": 4387347,
     "deaths": 2,
-    "mobKills": 7092,
+    "mobKills": 7094,
     "playerKills": 0,
-    "mined": 67411,
+    "mined": 67435,
     "crafted": 20178,
-    "km": 289.06,
-    "jumps": 52173,
-    "dmg": 13456,
-    "dmgTaken": 2851,
+    "km": 298.22,
+    "jumps": 52497,
+    "dmg": 13468,
+    "dmgTaken": 2892,
     "fish": 0,
     "bred": 63,
     "trades": 394,
@@ -131,7 +131,7 @@
      ],
      [
       "stone",
-      10833
+      10834
      ],
      [
       "deepslate",
@@ -165,7 +165,7 @@
      ],
      [
       "zombie",
-      134
+      135
      ],
      [
       "skeleton",
@@ -177,7 +177,7 @@
      ],
      [
       "spider",
-      98
+      99
      ],
      [
       "sheep",
@@ -310,13 +310,13 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 1037616,
+    "play": 1038175,
     "deaths": 7,
     "mobKills": 67,
     "playerKills": 0,
     "mined": 9352,
     "crafted": 3798,
-    "km": 66.74,
+    "km": 66.77,
     "jumps": 7131,
     "dmg": 789,
     "dmgTaken": 588,
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-05T20:15:26+00:00"
+ "updated": "2026-11-06T20:23:28+00:00"
 }
