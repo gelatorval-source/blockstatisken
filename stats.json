@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2829779,
+    "play": 2835400,
     "deaths": 1,
-    "mobKills": 2798,
+    "mobKills": 2805,
     "playerKills": 0,
     "mined": 20341,
     "crafted": 10148,
-    "km": 242.12,
-    "jumps": 18679,
-    "dmg": 6679,
-    "dmgTaken": 469,
+    "km": 244.63,
+    "jumps": 18713,
+    "dmg": 6767,
+    "dmgTaken": 476,
     "fish": 0,
     "bred": 0,
     "trades": 135,
@@ -262,11 +262,11 @@
      ],
      [
       "zombie",
-      141
+      144
      ],
      [
       "skeleton",
-      72
+      75
      ],
      [
       "pillager",
@@ -274,7 +274,7 @@
      ],
      [
       "spider",
-      31
+      32
      ],
      [
       "creeper",
@@ -310,35 +310,35 @@
    "id": "870471e2-4d3b-49a5-b884-c3aacd50028c",
    "name": "MUSKELMAUSI",
    "s": {
-    "play": 1056890,
+    "play": 1077219,
     "deaths": 7,
     "mobKills": 70,
     "playerKills": 0,
-    "mined": 9635,
+    "mined": 9858,
     "crafted": 3852,
-    "km": 67.85,
-    "jumps": 7169,
-    "dmg": 810,
-    "dmgTaken": 588,
+    "km": 69.06,
+    "jumps": 7266,
+    "dmg": 814,
+    "dmgTaken": 596,
     "fish": 0,
     "bred": 43,
     "trades": 0,
     "topMined": [
      [
       "stone",
-      2375
+      2431
      ],
      [
       "dirt",
-      2163
+      2228
      ],
      [
       "grass_block",
-      1499
+      1527
      ],
      [
       "sand",
-      560
+      570
      ],
      [
       "deepslate",
@@ -350,11 +350,11 @@
      ],
      [
       "wheat",
-      240
+      241
      ],
      [
       "carrots",
-      236
+      237
      ]
     ],
     "topKilled": [
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-06T21:45:12+00:00"
+ "updated": "2026-11-06T22:24:29+00:00"
 }
