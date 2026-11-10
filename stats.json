@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2843702,
+    "play": 2845239,
     "deaths": 1,
-    "mobKills": 2806,
+    "mobKills": 2809,
     "playerKills": 0,
     "mined": 20341,
     "crafted": 10148,
-    "km": 249.79,
-    "jumps": 18747,
-    "dmg": 6792,
-    "dmgTaken": 484,
+    "km": 250.17,
+    "jumps": 18764,
+    "dmg": 6828,
+    "dmgTaken": 486,
     "fish": 0,
     "bred": 0,
     "trades": 135,
@@ -262,7 +262,7 @@
      ],
      [
       "zombie",
-      144
+      145
      ],
      [
       "skeleton",
@@ -274,7 +274,7 @@
      ],
      [
       "spider",
-      32
+      33
      ],
      [
       "creeper",
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-08T19:18:41+00:00"
+ "updated": "2026-11-10T14:15:03+00:00"
 }
