@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2874706,
+    "play": 2880706,
     "deaths": 1,
     "mobKills": 2819,
     "playerKills": 0,
     "mined": 20343,
     "crafted": 10148,
-    "km": 255.4,
-    "jumps": 18955,
+    "km": 258.29,
+    "jumps": 18956,
     "dmg": 6929,
-    "dmgTaken": 502,
+    "dmgTaken": 503,
     "fish": 0,
     "bred": 0,
     "trades": 135,
@@ -425,5 +425,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-11T19:18:49+00:00"
+ "updated": "2026-11-14T22:04:24+00:00"
 }
