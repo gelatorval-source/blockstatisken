@@ -208,16 +208,16 @@
    "id": "89d9388c-2466-4838-9190-bfb244726a0c",
    "name": "50_Eric",
    "s": {
-    "play": 2893282,
-    "deaths": 1,
-    "mobKills": 2819,
+    "play": 2920892,
+    "deaths": 2,
+    "mobKills": 2831,
     "playerKills": 0,
-    "mined": 20351,
-    "crafted": 10153,
-    "km": 260.55,
-    "jumps": 19012,
-    "dmg": 6929,
-    "dmgTaken": 510,
+    "mined": 20516,
+    "crafted": 10325,
+    "km": 266.49,
+    "jumps": 19387,
+    "dmg": 7153,
+    "dmgTaken": 559,
     "fish": 0,
     "bred": 0,
     "trades": 135,
@@ -228,19 +228,19 @@
      ],
      [
       "deepslate",
-      2062
+      2123
      ],
      [
       "wheat",
       2052
      ],
      [
-      "dirt",
-      1774
+      "stone",
+      1843
      ],
      [
-      "stone",
-      1750
+      "dirt",
+      1774
      ],
      [
       "sugar_cane",
@@ -262,7 +262,7 @@
      ],
      [
       "zombie",
-      146
+      153
      ],
      [
       "skeleton",
@@ -278,7 +278,7 @@
      ],
      [
       "creeper",
-      23
+      27
      ],
      [
       "drowned",
@@ -291,6 +291,10 @@
     ],
     "killedBy": [
      [
+      "skeleton",
+      1
+     ],
+     [
       "enderman",
       1
      ]
@@ -300,7 +304,7 @@
      "wither": 0,
      "warden": 0,
      "elder": 0,
-     "diamonds": 39,
+     "diamonds": 43,
      "emeralds": 1,
      "debris": 0
     }
@@ -425,5 +429,5 @@
  "online": [],
  "feed": [],
  "deathCauses": {},
- "updated": "2026-11-14T22:40:41+00:00"
+ "updated": "2026-11-15T23:00:56+00:00"
 }
